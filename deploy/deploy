@@ -1,0 +1,43 @@
+#!/bin/bash
+
+set -e
+
+set +x
+
+set -o pipefail
+
+# decrypt secret file (compressed using tar)
+# there are 2 files included: one is service account key (JSON format),
+# which is used for authentication on Google Cloud so that we can deploy.
+# the other file is secret information of the project (JSON format) e.g.
+# database user name and password on server side.
+# openssl aes-256-cbc -K $encrypted_7f9b08ce8bbc_key -iv $encrypted_7f9b08ce8bbc_iv -in secrets.tar.enc -out secrets.tar -d
+
+#openssl aes-256-cbc -K $encrypted_83b4ea8ec829_key -iv $encrypted_83b4ea8ec829_iv -in secrets.tar.gz.enc -out secrets.tar.gz -d
+
+# extracts secret files
+#tar xvf secrets.tar.gz
+
+# gets the secret file as a string
+#secretStr=`cat secrets.json`
+
+# stores the secrets
+#dbServer="$(jq '.dbServer' <<<"$secretStr" | tr -d '"')"
+#dbUsername="$(jq '.dbUsername' <<<"$secretStr" | tr -d '"')"
+#dbPassword="$(jq '.dbPassword' <<<"$secretStr" | tr -d '"')"
+
+# gets the whole url
+url="jdbc:mysql://google/viz?cloudSqlInstance=$dbServer&socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=$dbUsername&password=$dbPassword&useSSL=false"
+# render properties file
+template=`cat application-prod.properties.template`
+settedTemplate=${template//<datasourceURL>/$url}
+
+# save the properties file
+printf "$settedTemplate" > ../src/main/resources/application-prod.properties
+
+# authorize google cloud sdk
+gcloud auth activate-service-account --key-file=viz-group1-b6c0e6443300.json
+
+# deploy
+cd $TRAVIS_BUILD_DIR
+./gradlew appengineDeploy

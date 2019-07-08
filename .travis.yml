@@ -1,0 +1,37 @@
+language: java
+jdk:
+- oraclejdk8
+
+before_install:
+# use apt get to install dependencies
+- sudo apt-get install -y jq
+- sudo apt-get install -y npm
+
+env:
+  global:
+    - TRAVIS_DEPLOY_VERSION=${TRAVIS_COMMIT:0:7}
+
+before_script:
+- frontendBuildPath=$TRAVIS_BUILD_DIR/src/web/app
+
+# install google cloud sdk and setup corresponding environment
+- export PATH=$HOME/google-cloud-sdk/bin:$PATH
+- curl -fsS -o $HOME/google-cloud-sdk.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/google-cloud-sdk.tar.gz
+- cd $HOME
+- tar -xzf google-cloud-sdk.tar.gz
+- ./google-cloud-sdk/install.sh --usage-reporting false --path-update false --command-completion false
+- cd $TRAVIS_BUILD_DIR
+- gcloud -q components install app-engine-java
+
+script:
+# lint and test front end
+- cd $frontendBuildPath && npm install && npm run lint && npm run test:unit
+
+# build production files of frontend
+- cd $frontendBuildPath && npm run build
+
+# test backend and the server
+- cd $TRAVIS_BUILD_DIR && ./gradlew check
+
+after_success:
+- test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && cd deploy && ./deploy

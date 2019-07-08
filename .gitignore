@@ -1,0 +1,23 @@
+.DS_Store
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Excutable binary
+cloud_sql_proxy
+
+# Build folder
+build/*
+out/*
+src/main/webapp/assets/*
+src/main/webapp/dist/*
+.gradle/*
+
+# Fronend dependency
+src/web/app/node_modules/*
+
