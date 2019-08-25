@@ -13,6 +13,7 @@
     "chart.js": "^2.7.3",
     "chartjs-plugin-datalabels": "^0.4.0",
     "color": "^3.1.0",
+    "convert-string": "^0.1.0",
     "element-ui": "^2.4.5",
     "html2canvas": "^1.0.0-alpha.12",
     "jspdf": "^1.4.1",
