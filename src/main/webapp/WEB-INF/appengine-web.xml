@@ -8,11 +8,11 @@
 
     <!-- Application ID of the app -->
     <!-- For dev server testing, this could be anything -->
-    <!-- For staging server testing, this should match the ID of the app your created on GAE -->
-    <application>viz-group1-228409</application>
-    <manual-scaling>
+    <!-- For staging server testing, this should match the project ID of the app your created on GAE -->
+    <application>chairvise-4-283411</application>
+    <!--<manual-scaling>
         <instances>5</instances>
-    </manual-scaling>
+    </manual-scaling>-->
     <!-- Version number of the app -->
     <!-- Use dashes instead of dots because GAE does not allow dots in version number -->
     <version>1-1-0</version>

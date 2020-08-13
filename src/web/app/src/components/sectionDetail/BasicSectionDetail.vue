@@ -4,9 +4,13 @@
              :rules="editFormRule">
       <div class="title" v-if="!isEditing">
         {{ sectionDetail.title }}
-        <el-button type="primary" plain @click="changeEditMode(true)" v-if="isPresentationEditable">Edit</el-button>
-        <el-button type="danger" icon="el-icon-delete" circle @click="deleteSectionDetail"
-                   v-if="isPresentationEditable"></el-button>
+        <el-button type="primary" @click="changeEditMode(true)" v-if="isPresentationEditable" icon="el-icon-edit">
+          Edit
+        </el-button>
+        <el-button type="danger" icon="el-icon-delete"  @click="deleteSectionDetail"
+                   v-if="isPresentationEditable">
+          Delete
+        </el-button>
       </div>
       <div class="title" v-else>
         <el-input v-model="editForm.title"></el-input>
@@ -44,7 +48,7 @@
                       :prop="'selections.' + index" :rules="editFormSelectionsRule">
           <el-input v-model="selection.expression" placeholder="Expression" style="width: 300px"></el-input>&nbsp;
           <el-input v-model="selection.rename" placeholder="Rename Field" style="width: 200px"></el-input>&nbsp;
-          <el-button type="danger" icon="el-icon-delete" circle @click="removeSelection(selection)"></el-button>
+          <el-button type="danger" icon="el-icon-delete" @click="removeSelection(selection)"></el-button>
         </el-form-item>
 
         <el-form-item label="Record Involved" prop="involvedRecords" v-if="isInAdvancedMode" key="involvedRecords">
@@ -89,7 +93,7 @@
               </el-option>
             </el-option-group>
           </el-select>&nbsp;
-          <el-button type="danger" icon="el-icon-delete" circle @click="removeJoiner(joiner)"></el-button>
+          <el-button type="danger" icon="el-icon-delete" @click="removeJoiner(joiner)"></el-button>
         </el-form-item>
 
         <el-form-item v-for="(filter, index) in editForm.filters" :label="'Filter ' + index"
@@ -114,7 +118,7 @@
             <el-option label="<" value="<"/>
           </el-select>&nbsp;
           <el-input v-model="filter.value" placeholder="Value" style="width: 200px"></el-input>&nbsp;
-          <el-button type="danger" icon="el-icon-delete" circle @click="removeFilter(filter)"></el-button>
+          <el-button type="danger" icon="el-icon-delete" @click="removeFilter(filter)"></el-button>
         </el-form-item>
 
         <el-form-item label="Description for the section">
@@ -154,20 +158,21 @@
             <el-option label="Big to Small" value="DESC"/>
             <el-option label="Small to Big" value="ASC"/>
           </el-select>&nbsp;
-          <el-button type="danger" icon="el-icon-delete" circle @click="removeSorter(sorter)"></el-button>
+          <el-button type="danger" icon="el-icon-delete" @click="removeSorter(sorter)"></el-button>
         </el-form-item>
 
         <slot name="extraFormItems" :editForm="editForm" :extraData="editForm.extraData"
               :isInAdvancedMode="isInAdvancedMode"></slot>
-
         <el-form-item>
-          <el-button type="primary" @click="previewAnalysisResult('editForm')" plain>Preview</el-button>
-          <el-button type="success" @click="saveSectionDetail('editForm')">Save</el-button>
-          <el-button @click="cancelEditing">Cancel</el-button>
-          <el-button type="success" plain @click="addSelection" v-if="isInAdvancedMode">Add selection</el-button>
-          <el-button type="success" plain @click="addJoiner" v-if="isInAdvancedMode">Add joiner</el-button>
-          <el-button type="success" plain @click="addFilter">Add filter</el-button>
-          <el-button type="success" plain @click="addSorter" v-if="isInAdvancedMode">Add sorting</el-button>
+          <el-button type="success" icon="el-icon-plus" plain @click="addSelection" v-if="isInAdvancedMode">Add selection</el-button>
+          <el-button type="success" icon="el-icon-plus" plain @click="addJoiner" v-if="isInAdvancedMode">Add joiner</el-button>
+          <el-button type="success" icon="el-icon-plus" plain @click="addFilter">Add filter</el-button>
+          <el-button type="success" icon="el-icon-plus" plain @click="addSorter" v-if="isInAdvancedMode">Add sorting</el-button>
+        </el-form-item>
+        <el-form-item>
+          <el-button type="primary" icon="el-icon-view" @click="previewAnalysisResult('editForm')" plain>Preview</el-button>
+          <el-button type="success" icon="el-icon-check" @click="saveSectionDetail('editForm')">Save</el-button>
+          <el-button icon="el-icon-close" @click="cancelEditing">Cancel</el-button>
         </el-form-item>
       </div>
     </el-form>
@@ -184,6 +189,10 @@
         required: true
       },
       presentationId: {
+        type: String,
+        required: true
+      },
+      version: {
         type: String,
         required: true
       },
@@ -227,7 +236,16 @@
       },
 
     },
-
+    watch: {
+      'version'() {
+        if (this.isEditing == true) {
+          this.previewAnalysisResult('editForm');
+        }
+        else {
+          this.sendAnalysisRequest();
+        }
+      }
+    },
     created() {
       this.syncDataWithProps();
       this.sendAnalysisRequest();
@@ -423,6 +441,7 @@
             joiners: this.editForm.joiners.map(j => Object.assign({}, j)),
             groupers: this.editForm.groupers.map(g => ({field: g})),
             sorters: this.editForm.sorters.map(s => Object.assign({}, s)),
+            versionId: this.version
           })
             .then(() => {
               this.$emit('update-visualisation', {
@@ -440,7 +459,7 @@
       },
 
       sendAnalysisRequest() {
-        this.$store.dispatch('sendAnalysisRequest', {id: this.sectionDetail.id, presentationId: this.presentationId})
+        this.$store.dispatch('sendAnalysisRequest', {id: this.sectionDetail.id, presentationId: this.presentationId, version: this.version})
           .then(() => {
             this.$emit('update-visualisation', {
               presentationId: this.presentationId,
@@ -451,7 +470,8 @@
               result: this.sectionDetail.result,
               groupers: this.sectionDetail.groupers,
               sorters: this.sectionDetail.sorters,
-              extraData: this.sectionDetail.extraData
+              extraData: this.sectionDetail.extraData,
+              versionId: this.version
             });
           })
       },

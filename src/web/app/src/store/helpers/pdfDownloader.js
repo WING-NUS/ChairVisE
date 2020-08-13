@@ -1,22 +1,22 @@
 import JavascriptPDF from "jspdf";
 import html2canvas from "html2canvas";
 import {
-  DESCRIPTION_MARGIN_TOP,
+  PDF_DESCRIPTION_MARGIN_TOP,
   PDF_CHART_MARGIN_LEFT,
   PDF_CHART_MARGIN_TOP,
   PDF_CHART_WIDTH,
-  TITLE_FONT_SIZE,
-  TITLE_MARGIN_LEFT,
-  TITLE_MARGIN_TOP
+  PDF_TITLE_FONT_SIZE,
+  PDF_TITLE_MARGIN_LEFT,
+  PDF_TITLE_MARGIN_TOP
 } from "@/common/const";
 
 let doc, marginTop;
 
-export function download(presentationFormName) {
+export function downloadPDF(presentationFormName) {
   doc = new JavascriptPDF("p", "mm", "a4");
   marginTop = PDF_CHART_MARGIN_TOP;
-  doc.setFontSize(TITLE_FONT_SIZE);
-  doc.text(TITLE_MARGIN_LEFT, TITLE_MARGIN_TOP, presentationFormName);
+  doc.setFontSize(PDF_TITLE_FONT_SIZE);
+  doc.text(PDF_TITLE_MARGIN_LEFT, PDF_TITLE_MARGIN_TOP, presentationFormName);
 
   return createPDF(presentationFormName);
 }
@@ -30,7 +30,7 @@ function getDescription() {
       return;
     }
     let descriptionHeight = element.height * PDF_CHART_WIDTH / element.width;
-    doc.addImage(imageData, "PNG", PDF_CHART_MARGIN_LEFT, DESCRIPTION_MARGIN_TOP, PDF_CHART_WIDTH, descriptionHeight, "", "FAST");
+    doc.addImage(imageData, "PNG", PDF_CHART_MARGIN_LEFT, PDF_DESCRIPTION_MARGIN_TOP, PDF_CHART_WIDTH, descriptionHeight, "", "FAST");
   });
 }
 

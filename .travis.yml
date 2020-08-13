@@ -1,6 +1,6 @@
 language: java
 jdk:
-- oraclejdk8
+- openjdk8
 
 before_install:
 # use apt get to install dependencies
@@ -32,6 +32,3 @@ script:
 
 # test backend and the server
 - cd $TRAVIS_BUILD_DIR && ./gradlew check
-
-after_success:
-- test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && cd deploy && ./deploy

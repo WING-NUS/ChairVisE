@@ -3,17 +3,40 @@ package sg.edu.nus.comp.cs3219.viz.common.entity.record;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import org.hibernate.annotations.GenericGenerator;
+import sg.edu.nus.comp.cs3219.viz.common.util.Deserializer.SubmissionRecordDeserializer;
 
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
+@JsonDeserialize(using = SubmissionRecordDeserializer.class)
 @Exportable(name = "Submission Record", nameInDB = "submission_record")
 @Entity
 public class SubmissionRecord {
+    public SubmissionRecord(){}
+
+    public SubmissionRecord(Version v, String submissionId, String trackId, String trackName, String title, List<String> authors,
+                            Date submissionTime, Date lastUpdatedTime, String keywords, String isAccepted,
+                            String isNotified, String isReviewsSent, String submissionAbstract) {
+        this.id = null;
+        this.version = v;
+        this.submissionId = submissionId;
+        this.trackId = trackId;
+        this.trackName = trackName;
+        this.title = title;
+        this.authors = authors;
+        this.submissionTime = submissionTime;
+        this.lastUpdatedTime = lastUpdatedTime;
+        this.keywords = keywords;
+        this.isAccepted = isAccepted;
+        this.isNotified = isNotified;
+        this.isReviewsSent = isReviewsSent;
+        this.submissionAbstract = submissionAbstract;
+    }
 
     @Id
     @GenericGenerator(name = "UseExistingIdOtherwiseGenerateUsingIdentity", strategy = "sg.edu.nus.comp.cs3219.viz.common.entity.UseExistingIdOtherwiseGenerateUsingIdentity")
@@ -21,9 +44,21 @@ public class SubmissionRecord {
     @JsonSerialize(using = ToStringSerializer.class)
     @Column(name = "s_id")
     private Long id;
-
+    /*
     // each record will be imported by each user, dataSet is used to distinguished records submitted by different user
     private String dataSet;
+
+    public String getDataSet() {
+        return dataSet;
+    }
+
+    public void setDataSet(String dataSet) {
+        this.dataSet = dataSet;
+    }
+*/
+
+    public Version getVersion(){return version;}
+    public void setVersion(Version version){this.version = version;}
 
     @Exportable(name = "Submission Id", nameInDB = "s_submission_id")
     @Column(name = "s_submission_id")
@@ -50,7 +85,19 @@ public class SubmissionRecord {
     private List<String> authors;
 
     // internal set of authors of the associated
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {
+        CascadeType.DETACH,
+        CascadeType.MERGE,
+        CascadeType.REFRESH,
+        CascadeType.PERSIST
+    })    
+    @JoinTable(name = "submission_record_author_set",
+            joinColumns = { 
+                @JoinColumn(name = "s_id") 
+            },
+            inverseJoinColumns = { 
+                @JoinColumn(name = "s_author_id", nullable = false, updatable = false) 
+            })
     @JsonIgnore
     private List<SubmissionAuthorRecord> authorSet;
 
@@ -94,6 +141,14 @@ public class SubmissionRecord {
     @Column(name = "s_submission_abstract", columnDefinition = "TEXT")
     private String submissionAbstract;
 
+    @ManyToOne
+    @JoinColumns({
+            @JoinColumn(name = "data_set", referencedColumnName = "data_set"),
+            @JoinColumn(name = "record_type", referencedColumnName = "record_type"),
+            @JoinColumn(name = "version", referencedColumnName = "version"),
+    })
+    private Version version;
+
     public Long getId() {
         return id;
     }
@@ -102,13 +157,7 @@ public class SubmissionRecord {
         this.id = id;
     }
 
-    public String getDataSet() {
-        return dataSet;
-    }
 
-    public void setDataSet(String dataSet) {
-        this.dataSet = dataSet;
-    }
 
     public String getSubmissionId() {
         return submissionId;

@@ -6,6 +6,7 @@ import com.google.appengine.api.users.UserServiceFactory;
 import org.springframework.stereotype.Component;
 import sg.edu.nus.comp.cs3219.viz.common.datatransfer.AccessLevel;
 import sg.edu.nus.comp.cs3219.viz.common.datatransfer.UserInfo;
+import sg.edu.nus.comp.cs3219.viz.common.entity.Conference;
 import sg.edu.nus.comp.cs3219.viz.common.entity.Presentation;
 import sg.edu.nus.comp.cs3219.viz.common.exception.UnauthorisedException;
 import sg.edu.nus.comp.cs3219.viz.common.util.Const;
@@ -52,6 +53,19 @@ public class GateKeeper {
 
     public UserInfo verifyLoginAccess() {
         return getCurrentLoginUser().orElseThrow(UnauthorisedException::new);
+    }
+
+    public void verifyDeletionAccessForConference(Conference conference) {
+        if (conference == null) {
+            throw new UnauthorisedException();
+        }
+
+        UserInfo currentUser = getCurrentLoginUser()
+                .orElseThrow(UnauthorisedException::new);
+
+        if (!currentUser.getUserEmail().equals(conference.getCreatorIdentifier())) {
+            throw new UnauthorisedException();
+        }
     }
 
     public void verifyDeletionAccessForPresentation(Presentation presentation) {
@@ -102,6 +116,4 @@ public class GateKeeper {
 
         throw new UnauthorisedException();
     }
-
-
 }

@@ -30,5 +30,5 @@ export const generateBorderColor = (size) => {
 
 export const generateBackgroundColor = (size) => {
   let colorSet = chooseColorSet(size);
-  return colorSet.map(hex => new Color(hex).alpha(0.5).string());
+  return colorSet.map(hex => new Color(hex).alpha(0.8).string());
 };

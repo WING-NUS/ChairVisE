@@ -5,6 +5,9 @@ import 'element-ui/lib/theme-chalk/index.css';
 import router from './router'
 import store from './store'
 import './plugins/element.js'
+//Fade andzoom animation
+import 'element-ui/lib/theme-chalk/base.css';
+import 'fullcalendar/dist/fullcalendar.css'
 
 Vue.use(ElementUI);
 

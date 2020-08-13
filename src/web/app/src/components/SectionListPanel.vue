@@ -1,38 +1,48 @@
 <template>
   <div>
-    <el-row class="addRowRightAlign" v-if="isNewPresentation">
-      <el-alert
-        title="Please create presentation before adding sections"
-        type="info"
-        show-icon>
-      </el-alert>
-    </el-row>
     <div v-loading="isLoadingDBMetaData || isLoadingSectionList" v-if="!isNewPresentation">
-      <el-row class="addRowRightAlign" v-if="isLogin && isPresentationEditable">
-        <el-select v-model="selectedNewSection" placeholder="Please select a section to add" style="width: 300px"
-                   filterable>
-          <el-option-group
-            v-for="group in predefinedSections"
-            :key="group.label"
-            :label="group.label">
-            <el-option
-              v-for="item in group.options"
-              :key="item.value"
-              :label="item.label"
-              :value="item.value">
+      <el-aside width="300px" class="addRowRightAlign" v-if="isLogin">
+        <el-card v-if="!isSectionListEmpty" >
+          <div slot="header" class="clearfix">
+            <span> Select version </span>
+          </div>
+          <el-select class= "versionInput" v-model="presentationFormVersion" placeholder="Please select a version" >
+            <el-option v-for="v in versions" :key="v" :label="v" :value="v">
             </el-option>
-          </el-option-group>
-        </el-select>
-        <el-button class="addButtonLeft" type="success" @click="addNewSection">Add New Section</el-button>
-      </el-row>
+          </el-select>        
+        </el-card>
+        <el-card>  
+          <div slot="header" class="clearfix">
+            <span> Add section </span>
+          </div>
+          <el-select class= "selectionInput" v-model="selectedNewSection" placeholder="Please select a section to add"
+                    filterable>
+            <el-option-group
+              v-for="group in predefinedSections"
+              :key="group.label"
+              :label="group.label">
+              <el-option
+                v-for="item in group.options"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value">
+              </el-option>
+            </el-option-group>
+          </el-select>
+          <el-button class="selectionInputButton" icon="el-icon-plus" type="success" @click="addNewSection">Add New Section</el-button>
+        </el-card>
+      </el-aside>
       <br/>
       <el-alert
         v-if="isSectionListApiError"
         :title="sectionListApiErrorMsg"
         type="error" show-icon>
       </el-alert>
-      <abstract-section-detail class="presentation-section" v-for="section in sectionList" :sectionDetail="section"
-                               :key="section.id" :presentationId="presentationId"/>
+      <el-card shadow="hover">
+        <abstract-section-detail class="presentation-section" v-for="section in sectionList" :sectionDetail="section"
+                            :key="section.id" :presentationId="presentationId" :version="presentationFormVersion"/>
+        <EmptySection v-if="isSectionListEmpty" />
+      </el-card>
     </div>
   </div>
 </template>
@@ -41,17 +51,22 @@
   import AbstractSectionDetail from "@/components/AbstractSectionDetail.vue"
   import {ID_NEW_PRESENTATION} from "@/common/const";
   import PredefinedQueries from "@/store/data/predefinedQueries"
+  import EmptySection from "@/components/emptyStates/EmptySection.vue"
 
   export default {
     props: {
       presentationId: String,
     },
     watch: {
-      presentationId: 'fetchSectionList'
+      presentationId: 'fetchSectionList',
+      'presentationFormVersion'() {
+        this.updateVersion();
+      }
     },
     data() {
       return {
         selectedNewSection: '',
+        presentationFormVersion: ''
       }
     },
     computed: {
@@ -101,6 +116,9 @@
       sectionList() {
         return this.$store.state.section.sectionList
       },
+      isSectionListEmpty() {
+        return this.$store.state.section.sectionList.length <= 0
+      },
       isLoadingSectionList() {
         return this.$store.state.section.sectionListStatus.isLoading
       },
@@ -112,16 +130,38 @@
       },
       isLoadingDBMetaData() {
         return this.$store.state.dbMetaData.entitiesStatus.isLoading
-      }
+      },
+      versions() {
+        let list = Array.from(new Set(this.$store.state.presentation.versionList.map(v => v.versionId)));
+        this.setDefaultValueForVersionList(list[0]);
+        return list;
+      },
     },
     components: {
-      AbstractSectionDetail
+      AbstractSectionDetail,
+      EmptySection
     },
     mounted() {
       this.fetchSectionList();
       this.$store.dispatch('fetchDBMetaDataEntities');
+      this.$store.dispatch('getVersionList');
     },
     methods: {
+      updateVersion() {
+        var value = this.presentationFormVersion;
+        if (value === undefined) {
+            value = this.versions[0];
+        }
+        this.$store.commit('setPresentationFormField', {
+            field: 'version',
+            value
+        });
+      },
+
+      setDefaultValueForVersionList(value) {
+        this.presentationFormVersion = value;
+      },
+
       fetchSectionList() {
         if (this.isNewPresentation) {
           this.$store.commit('clearSectionList');
@@ -132,6 +172,11 @@
 
       addNewSection() {
         if (this.selectedNewSection.length === 0) {
+
+          this.$notify.error({
+            title: 'Error',
+            message: 'Please select a section to add into presentation.'
+          });
           return;
         }
         this.$store.dispatch('addSectionDetail', {
@@ -147,11 +192,28 @@
 </script>
 
 <style scoped>
-  .addButtonLeft {
-    margin-left: 10px;
+  .textBold {
+    font-weight: bold;
   }
-
+  .versionInput {
+    display: inline-block;
+    width: 100%;
+  }
+  .selectionInput {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .selectionInputButton {
+    display: inline-block;
+    width: 100%;
+  }
   .addRowRightAlign {
-    text-align: right;
+    float: right;
+    margin-top: 18px;
+    margin-left: 16px;
+  }
+  .addRowRightAlign .el-card{
+    margin-bottom: 16px;
   }
 </style>

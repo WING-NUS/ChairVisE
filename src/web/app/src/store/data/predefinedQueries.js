@@ -1,4 +1,743 @@
+import {SECTION_TYPE_BAR_CHART, SECTION_TYPE_GRAPH_NETWORK,
+  SECTION_TYPE_RADAR_CHART, SECTION_TYPE_DEPENDENCY_CHART} from "../../common/const";
+
 export default {
+  "co_authorship_author_dependency": {
+    name: "Dependency Chart Inter-author collaboration",
+    group: "Co-authorship",
+    data: {
+      type: SECTION_TYPE_DEPENDENCY_CHART,
+      title: "Inter-author collaboration",
+      dataSet: "${PLACEHOLDER_DATA_SET}",
+      description: "Dependency chart for author-author collaborations",
+      selections: [
+        {
+          expression: "count(*)",
+          rename: "num_collab"
+        },
+        {
+          expression: "temp.a1_author",
+          rename: "a1_author"
+        },
+        {
+          expression: "temp.a2_author",
+          rename: "a2_author"
+        }
+      ],
+      involvedRecords: [
+        {
+          name:"(select a1.a_person_id as a1_author, a2.a_person_id as a2_author, a1.a_submission_id as submission_id," +
+              "s1.s_is_accepted, s1.s_keywords\n" +
+              "from author_record as a1, author_record as a2, submission_record as s1\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}' and s1.data_set = '${PLACEHOLDER_DATA_SET}'\n" +
+              "and a1.a_submission_id = a2.a_submission_id and s1.s_submission_id = a1.a_submission_id " +
+              "and a1.a_person_id < a2.a_person_id and a1.a_person_id != '') as temp",
+          customized: true
+        }
+      ],
+      filters: [
+        {
+          field: "temp.s_is_accepted",
+          comparator: "=",
+          value: "'accept'"
+        },
+        {
+          field: "temp.s_keywords",
+          comparator: "like",
+          value: "'%'"
+        }
+      ],
+      joiners: [],
+      groupers: [
+        {
+          field: "temp.a1_author"
+        },
+        {
+          field: "temp.a2_author"
+        }
+      ],
+      sorters: [
+        {
+          field: "count(*)",
+          order: "desc"
+        }
+      ],
+      extraData: {
+        dataSetLabel: 'Number of collaborations',
+        fieldsShownInToolTips: [
+          {
+            label: 'Authors: ',
+            field: 'auth-auth'
+          },
+        ],
+        xAxisFieldName: "a1_author",
+        xAxisFieldName2: "a2_author",
+        yAxisFieldName: 'num_collab',
+        numOfResultToDisplay: 10,
+        isColorfulBar: true,
+      }
+    }
+  },
+  "co_authorship_author_radar": {
+    name: "Radar Chart Inter-author collaboration",
+    group: "Co-authorship",
+    data: {
+      type: SECTION_TYPE_RADAR_CHART,
+      title: "Inter-author collaboration",
+      dataSet: "${PLACEHOLDER_DATA_SET}",
+      description: "Radar chart for author-author collaborations",
+      selections: [
+        {
+          expression: "concat(temp.a1_author, ' - ', temp.a2_author)",
+          rename: "auth-auth"
+        },
+        {
+          expression: "count(*)",
+          rename: "num_collab"
+        },
+      ],
+      involvedRecords: [
+        {
+          name:"(select a1.a_person_id as a1_author, a2.a_person_id as a2_author, a1.a_submission_id as submission_id," +
+              "s1.s_is_accepted, s1.s_keywords\n" +
+              "from author_record as a1, author_record as a2, submission_record as s1\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}' and s1.data_set = '${PLACEHOLDER_DATA_SET}'\n" +
+              "and a1.a_submission_id = a2.a_submission_id and s1.s_submission_id = a1.a_submission_id " +
+              "and a1.a_person_id < a2.a_person_id and a1.a_person_id != '') as temp",
+          customized: true
+        }
+      ],
+      filters: [
+        {
+          field: "temp.s_is_accepted",
+          comparator: "=",
+          value: "'accept'"
+        },
+        {
+          field: "temp.s_keywords",
+          comparator: "like",
+          value: "'%'"
+        }
+      ],
+      joiners: [],
+      groupers: [
+        {
+          field: "temp.a1_author"
+        },
+        {
+          field: "temp.a2_author"
+        }
+      ],
+      sorters: [
+        {
+          field: "count(*)",
+          order: "desc"
+        }
+      ],
+      extraData: {
+        dataSetLabel: 'Number of collaborations',
+        fieldsShownInToolTips: [
+          {
+            label: 'Authors: ',
+            field: 'auth-auth'
+          },
+        ],
+        xAxisFieldName: 'auth-auth',
+        yAxisFieldName: 'num_collab',
+        numOfResultToDisplay: 10,
+        isColorfulBar: true,
+      }
+    }
+  },
+  "co_authorship_organisation_radar": {
+    name: "Radar chart Inter-organisation collaboration",
+    group: "Co-authorship",
+    data: {
+      type: SECTION_TYPE_RADAR_CHART,
+      title: "Inter-organisation collaboration",
+      dataSet: "${PLACEHOLDER_DATA_SET}",
+      description: "Radar chart for organisation-organisation collaborations",
+      selections: [
+        {
+          expression: "concat(temp.a1_org, ' - ', temp.a2_org)",
+          rename: "org-org"
+        },
+        {
+          expression: "count(*)",
+          rename: "num_collab"
+        },
+      ],
+      involvedRecords: [
+        {
+          name:"(select a1.a_organisation as a1_org, a2.a_organisation as a2_org, a1.a_submission_id as submission_id," +
+              "s1.s_is_accepted, s1.s_keywords\n" +
+              "from author_record as a1, author_record as a2, submission_record as s1\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}' and s1.data_set = '${PLACEHOLDER_DATA_SET}'\n" +
+              "and a1.a_submission_id = a2.a_submission_id and s1.s_submission_id = a1.a_submission_id " +
+              "and a1.a_organisation < a2.a_organisation) as temp",
+          customized: true
+        }
+      ],
+      filters: [
+        {
+          field: "temp.s_is_accepted",
+          comparator: "=",
+          value: "'accept'"
+        },
+        {
+          field: "temp.s_keywords",
+          comparator: "like",
+          value: "'%'"
+        }
+      ],
+      joiners: [],
+      groupers: [
+        {
+          field: "temp.a1_org"
+        },
+        {
+          field: "temp.a2_org"
+        }
+      ],
+      sorters: [
+        {
+          field: "count(*)",
+          order: "desc"
+        }
+      ],
+      extraData: {
+        dataSetLabel: 'Number of collaborations',
+        fieldsShownInToolTips: [
+          {
+            label: 'Organisations',
+            field: 'org-org'
+          }
+        ],
+        xAxisFieldName: 'org-org',
+        yAxisFieldName: 'num_collab',
+        numOfResultToDisplay: 10,
+        isColorfulBar: true,
+      }
+    }
+  },
+  "co_authorship_country_radar": {
+    name: "Radar Chart Inter-country collaboration",
+    group: "Co-authorship",
+    data: {
+      type: SECTION_TYPE_RADAR_CHART,
+      title: "Inter-country collaboration",
+      dataSet: "${PLACEHOLDER_DATA_SET}",
+      description: "Radar chart for country-country collaborations",
+      selections: [
+        {
+          expression: "concat(temp.a1_country, ' - ', temp.a2_country)",
+          rename: "country-country"
+        },
+        {
+          expression: "count(*)",
+          rename: "num_collab"
+        },
+      ],
+      involvedRecords: [
+        {
+          name:"(select a1.a_country as a1_country, a2.a_country as a2_country, a1.a_submission_id as submission_id," +
+              "s1.s_is_accepted, s1.s_keywords\n" +
+              "from author_record as a1, author_record as a2, submission_record as s1\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}' and s1.data_set = '${PLACEHOLDER_DATA_SET}'\n" +
+              "and a1.a_submission_id = a2.a_submission_id and s1.s_submission_id = a1.a_submission_id " +
+              "and a1.a_country < a2.a_country) as temp",
+          customized: true
+        }
+      ],
+      filters: [
+        {
+          field: "temp.s_is_accepted",
+          comparator: "=",
+          value: "'accept'"
+        },
+        {
+          field: "temp.s_keywords",
+          comparator: "like",
+          value: "'%'"
+        }
+      ],
+      joiners: [],
+      groupers: [
+        {
+          field: "temp.a1_country"
+        },
+        {
+          field: "temp.a2_country"
+        }
+      ],
+      sorters: [
+        {
+          field: "count(*)",
+          order: "desc"
+        }
+      ],
+      extraData: {
+        dataSetLabel: 'Number of collaborations',
+        fieldsShownInToolTips: [
+          {
+            label: 'Countries: ',
+            field: 'country-country'
+          }
+        ],
+        xAxisFieldName: 'country-country',
+        yAxisFieldName: 'num_collab',
+        numOfResultToDisplay: 10,
+        isColorfulBar: true,
+      }
+    }
+  }, 
+  "co_authorship_author_bar": {
+    name: "Inter-author collaboration",
+    group: "Co-authorship",
+    data: {
+      type: SECTION_TYPE_BAR_CHART,
+      title: "Inter-author collaboration",
+      dataSet: "${PLACEHOLDER_DATA_SET}",
+      description: "Bar chart for author-author collaborations",
+      selections: [
+        {
+          expression: "concat(temp.a1_author, ' - ', temp.a2_author)",
+          rename: "auth-auth"
+        },
+        {
+          expression: "count(*)",
+          rename: "num_collab"
+        },
+      ],
+      involvedRecords: [
+        {
+          name:"(select a1.a_person_id as a1_author, a2.a_person_id as a2_author, a1.a_submission_id as submission_id," +
+              "s1.s_is_accepted, s1.s_keywords\n" +
+              "from author_record as a1, author_record as a2, submission_record as s1\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}' and s1.data_set = '${PLACEHOLDER_DATA_SET}'\n" +
+              "and a1.a_submission_id = a2.a_submission_id and s1.s_submission_id = a1.a_submission_id " +
+              "and a1.a_person_id < a2.a_person_id and a1.a_person_id != '') as temp",
+          customized: true
+        }
+      ],
+      filters: [
+        {
+          field: "temp.s_is_accepted",
+          comparator: "=",
+          value: "'accept'"
+        },
+        {
+          field: "temp.s_keywords",
+          comparator: "like",
+          value: "'%'"
+        }
+      ],
+      joiners: [],
+      groupers: [
+        {
+          field: "temp.a1_author"
+        },
+        {
+          field: "temp.a2_author"
+        }
+      ],
+      sorters: [
+        {
+          field: "count(*)",
+          order: "desc"
+        }
+      ],
+      extraData: {
+        dataSetLabel: 'Number of collaborations',
+        fieldsShownInToolTips: [
+          {
+            label: 'Authors: ',
+            field: 'auth-auth'
+          },
+        ],
+        xAxisFieldName: 'auth-auth',
+        yAxisFieldName: 'num_collab',
+        numOfResultToDisplay: 10,
+        isColorfulBar: true,
+      }
+    }
+  },
+  "co_authorship_organisation_bar": {
+    name: "Inter-organisation collaboration",
+    group: "Co-authorship",
+    data: {
+      type: SECTION_TYPE_BAR_CHART,
+      title: "Inter-organisation collaboration",
+      dataSet: "${PLACEHOLDER_DATA_SET}",
+      description: "Bar chart for organisation-organisation collaborations",
+      selections: [
+        {
+          expression: "concat(temp.a1_org, ' - ', temp.a2_org)",
+          rename: "org-org"
+        },
+        {
+          expression: "count(*)",
+          rename: "num_collab"
+        },
+      ],
+      involvedRecords: [
+        {
+          name:"(select a1.a_organisation as a1_org, a2.a_organisation as a2_org, a1.a_submission_id as submission_id," +
+              "s1.s_is_accepted, s1.s_keywords\n" +
+              "from author_record as a1, author_record as a2, submission_record as s1\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}' and s1.data_set = '${PLACEHOLDER_DATA_SET}'\n" +
+              "and a1.a_submission_id = a2.a_submission_id and s1.s_submission_id = a1.a_submission_id " +
+              "and a1.a_organisation < a2.a_organisation) as temp",
+          customized: true
+        }
+      ],
+      filters: [
+        {
+          field: "temp.s_is_accepted",
+          comparator: "=",
+          value: "'accept'"
+        },
+        {
+          field: "temp.s_keywords",
+          comparator: "like",
+          value: "'%'"
+        }
+      ],
+      joiners: [],
+      groupers: [
+        {
+          field: "temp.a1_org"
+        },
+        {
+          field: "temp.a2_org"
+        }
+      ],
+      sorters: [
+        {
+          field: "count(*)",
+          order: "desc"
+        }
+      ],
+      extraData: {
+        dataSetLabel: 'Number of collaborations',
+        fieldsShownInToolTips: [
+          {
+            label: 'Organisations',
+            field: 'org-org'
+          }
+        ],
+        xAxisFieldName: 'org-org',
+        yAxisFieldName: 'num_collab',
+        numOfResultToDisplay: 10,
+        isColorfulBar: true,
+      }
+    }
+  },
+  "co_authorship_country_bar": {
+    name: "Inter-country collaboration",
+    group: "Co-authorship",
+    data: {
+      type: SECTION_TYPE_BAR_CHART,
+      title: "Inter-country collaboration",
+      dataSet: "${PLACEHOLDER_DATA_SET}",
+      description: "Bar chart for country-country collaborations",
+      selections: [
+        {
+          expression: "concat(temp.a1_country, ' - ', temp.a2_country)",
+          rename: "country-country"
+        },
+        {
+          expression: "count(*)",
+          rename: "num_collab"
+        },
+      ],
+      involvedRecords: [
+        {
+          name:"(select a1.a_country as a1_country, a2.a_country as a2_country, a1.a_submission_id as submission_id," +
+              "s1.s_is_accepted, s1.s_keywords\n" +
+              "from author_record as a1, author_record as a2, submission_record as s1\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}' and s1.data_set = '${PLACEHOLDER_DATA_SET}'\n" +
+              "and a1.a_submission_id = a2.a_submission_id and s1.s_submission_id = a1.a_submission_id " +
+              "and a1.a_country < a2.a_country) as temp",
+          customized: true
+        }
+      ],
+      filters: [
+        {
+          field: "temp.s_is_accepted",
+          comparator: "=",
+          value: "'accept'"
+        },
+        {
+          field: "temp.s_keywords",
+          comparator: "like",
+          value: "'%'"
+        }
+      ],
+      joiners: [],
+      groupers: [
+        {
+          field: "temp.a1_country"
+        },
+        {
+          field: "temp.a2_country"
+        }
+      ],
+      sorters: [
+        {
+          field: "count(*)",
+          order: "desc"
+        }
+      ],
+      extraData: {
+        dataSetLabel: 'Number of collaborations',
+        fieldsShownInToolTips: [
+          {
+            label: 'Countries: ',
+            field: 'country-country'
+          }
+        ],
+        xAxisFieldName: 'country-country',
+        yAxisFieldName: 'num_collab',
+        numOfResultToDisplay: 10,
+        isColorfulBar: true,
+      }
+    }
+  },  
+  "co_authorship_author_network": {
+    name: "Graph network of author collaborations",
+    group: "Co-authorship",
+    data: {
+      type: SECTION_TYPE_GRAPH_NETWORK,
+      title: "Graph network of author collaborations",
+      dataSet: "${PLACEHOLDER_DATA_SET}",
+      description: "Graph network for author-author collaborated submissions",
+      selections: [
+        {
+          expression: "temp.a1_author",
+          rename: "author_1"
+        },
+        {
+          expression: "temp.a2_author",
+          rename: "author_2"
+        },
+        {
+          expression: "count(*)",
+          rename: "num_collab"
+        },
+      ],
+      involvedRecords: [
+        {
+          name:"(select a1.a_person_id as a1_author, a2.a_person_id as a2_author, a1.a_submission_id as submission_id," +
+              "s1.s_is_accepted, s1.s_keywords\n" +
+              "from author_record as a1, author_record as a2, submission_record as s1\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}' and s1.data_set = '${PLACEHOLDER_DATA_SET}'\n" +
+              "and a1.a_submission_id = a2.a_submission_id and s1.s_submission_id = a1.a_submission_id " +
+              "and a1.a_person_id < a2.a_person_id and a1.a_person_id != '') as temp",
+          customized: true
+        }
+      ],
+      filters: [
+        {
+          field: "temp.s_is_accepted",
+          comparator: "=",
+          value: "'accept'"
+        },
+        {
+          field: "temp.s_keywords",
+          comparator: "like",
+          value: "'%'"
+        }
+      ],
+      joiners: [],
+      groupers: [
+        {
+          field: "temp.a1_author"
+        },
+        {
+          field: "temp.a2_author"
+        }
+      ],
+      sorters: [
+        {
+          field: "count(*)",
+          order: "desc"
+        }
+      ],
+      extraData: {
+        linkMessage: [ 
+          {
+            msg: " has collaborated with  "
+          },
+          {
+            msg: " for  "
+          },
+          {
+            msg: " submissions ",
+          }
+        ],
+        numOfResultToDisplay: 15,
+        isColorfulBar: true,
+        nodeMessage: "Author ID: ",
+      }
+    }
+  },
+  "co_authorship_organisation_network": {
+    name: "Graph network of organisation collaborations",
+    group: "Co-authorship",
+    data: {
+      type: SECTION_TYPE_GRAPH_NETWORK,
+      title: "Graph network of organisation collaborations",
+      dataSet: "${PLACEHOLDER_DATA_SET}",
+      description: "Graph network for organisation-organisation collaborated submissions",
+      selections: [
+        {
+          expression: "temp.a1_org",
+          rename: "org_1"
+        },
+        {
+          expression: "temp.a2_org",
+          rename: "org_2"
+        },
+        {
+          expression: "count(*)",
+          rename: "num_collab"
+        },
+      ],
+      involvedRecords: [
+        {
+          name:"(select a1.a_organisation as a1_org, a2.a_organisation as a2_org, a1.a_submission_id as submission_id," +
+              "s1.s_is_accepted, s1.s_keywords\n" +
+              "from author_record as a1, author_record as a2, submission_record as s1\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}' and s1.data_set = '${PLACEHOLDER_DATA_SET}'\n" +
+              "and a1.a_submission_id = a2.a_submission_id and s1.s_submission_id = a1.a_submission_id " +
+              "and a1.a_organisation < a2.a_organisation) as temp",
+          customized: true
+        }
+      ],
+      filters: [
+        {
+          field: "temp.s_is_accepted",
+          comparator: "=",
+          value: "'accept'"
+        },
+        {
+          field: "temp.s_keywords",
+          comparator: "like",
+          value: "'%'"
+        }
+      ],
+      joiners: [],
+      groupers: [
+        {
+          field: "temp.a1_org"
+        },
+        {
+          field: "temp.a2_org"
+        }
+      ],
+      sorters: [
+        {
+          field: "count(*)",
+          order: "desc"
+        }
+      ],
+      extraData: {
+        linkMessage: [ 
+          {
+            msg: " has collaborated with  "
+          },
+          {
+            msg: " for  "
+          },
+          {
+            msg: " submissions ",
+          }
+        ],
+        numOfResultToDisplay: 15,
+        isColorfulBar: true,
+        nodeMessage: "Organisation: ",
+      }
+    }
+  },
+  "co_authorship_country_network": {
+    name: "Graph network of country collaborations",
+    group: "Co-authorship",
+    data: {
+      type: SECTION_TYPE_GRAPH_NETWORK,
+      title: "Graph network of country collaborations",
+      dataSet: "${PLACEHOLDER_DATA_SET}",
+      description: "Graph network for country-country collaborated submissions",
+      selections: [
+        {
+          expression: "temp.a1_country",
+          rename: "country_1"
+        },
+        {
+          expression: "temp.a2_country",
+          rename: "country_2"
+        },
+        {
+          expression: "count(*)",
+          rename: "num_collab"
+        },
+      ],
+      involvedRecords: [
+        {
+          name:"(select a1.a_country as a1_country, a2.a_country as a2_country, a1.a_submission_id as submission_id," +
+              "s1.s_is_accepted, s1.s_keywords\n" +
+              "from author_record as a1, author_record as a2, submission_record as s1\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}' and s1.data_set = '${PLACEHOLDER_DATA_SET}'\n" +
+              "and a1.a_submission_id = a2.a_submission_id and s1.s_submission_id = a1.a_submission_id " +
+              "and a1.a_country < a2.a_country) as temp",
+          customized: true
+        }
+      ],
+      filters: [
+        {
+          field: "temp.s_is_accepted",
+          comparator: "=",
+          value: "'accept'"
+        },
+        {
+          field: "temp.s_keywords",
+          comparator: "like",
+          value: "'%'"
+        }
+      ],
+      joiners: [],
+      groupers: [
+        {
+          field: "temp.a1_country"
+        },
+        {
+          field: "temp.a2_country"
+        }
+      ],
+      sorters: [
+        {
+          field: "count(*)",
+          order: "desc"
+        }
+      ],
+      extraData: {
+        linkMessage: [ 
+          {
+            msg: " has collaborated with  "
+          },
+          {
+            msg: " for  "
+          },
+          {
+            msg: " submissions ",
+          }
+        ],
+        numOfResultToDisplay: 15,
+        isColorfulBar: true,
+        nodeMessage: "Country: ",
+      }
+    }
+  },
   "word_cloud_keywords_all_submission": {
     name: "Word Cloud for All Submissions Keywords",
     group: 'Submission Record',
@@ -821,21 +1560,24 @@ export default {
       description: 'This table shows the weighted evaluation score statistics based on the minimum, maximum value, the average, median score and the standard deviation of the weighted evaluation scores. This gives us an insight on the evaluation score given by each reviewer in their review.',
       selections: [
         {
-          expression: 'ROUND(SUM(r_confidence_level * r_overall_evaluation_score) / SUM(r_confidence_level), 2)',
+          expression: 'temp.r_id',
+          rename: 'r_id'
+        },
+        {
+          expression: 'temp.weighted_score',
           rename: 'weighted_score'
         },
       ],
       involvedRecords: [
         {
-          name: 'review_record',
-          customized: false,
+          name: '(SELECT r1.r_id, r2.weighted_score FROM review_record r1, (SELECT r_submission_id, ROUND(SUM(r_confidence_level * r_overall_evaluation_score) / SUM(r_confidence_level), 2) AS `weighted_score` FROM review_record WHERE review_record.data_set = "${PLACEHOLDER_DATA_SET}" GROUP BY r_submission_id) r2\n' +
+                'WHERE r1.r_submission_id = r2.r_submission_id AND r1.data_set = "${PLACEHOLDER_DATA_SET}") as temp',
+          customized: true,
         }
       ],
       filters: [],
       joiners: [],
-      groupers: [{
-        field: 'r_submission_id'
-      }],
+      groupers: [],
       sorters: [],
       extraData: {
         types: ['min', 'max', 'avg', 'median', 'std'],
@@ -852,21 +1594,24 @@ export default {
       description: 'This table shows the reviewer expertise level statistics based on the minimum, maximum value, the average, median score and the standard deviation of the weighted evaluation scores. This gives us an insight on how specialized the reviewers are in their review.',
       selections: [
         {
-          expression: 'ROUND(AVG(r_expertise_level), 2)',
+          expression: 'temp.r_id',
+          rename: 'r_id'
+        },
+        {
+          expression: 'temp.avg_expertise_level',
           rename: 'avg_expertise_level'
         },
       ],
       involvedRecords: [
         {
-          name: 'review_record',
-          customized: false,
+          name: '(SELECT r1.r_id, r2.avg_expertise_level FROM review_record r1, (SELECT r_submission_id, ROUND(AVG(r_expertise_level), 2) AS `avg_expertise_level` FROM review_record WHERE review_record.data_set = "${PLACEHOLDER_DATA_SET}" GROUP BY r_submission_id) r2\n' +
+          'WHERE r1.r_submission_id = r2.r_submission_id AND r1.data_set = "${PLACEHOLDER_DATA_SET}") as temp',
+          customized: true,
         }
       ],
       filters: [],
       joiners: [],
-      groupers: [{
-        field: 'r_submission_id'
-      }],
+      groupers: [],
       sorters: [],
       extraData: {
         types: ['min', 'max', 'avg', 'median', 'std'],
@@ -883,23 +1628,24 @@ export default {
       description: 'This table shows the reviewer confidence level statistics based on the minimum, maximum value, the average, median score and the standard deviation of the weighted evaluation scores. This gives us an insight on how confident the reviewers are in their review.',
       selections: [
         {
-          expression: 'ROUND(AVG(r_confidence_level), 2)',
+          expression: 'temp.r_id',
+          rename: 'r_id'
+        },
+        {
+          expression: 'temp.avg_confidence_level',
           rename: 'avg_confidence_level'
         },
       ],
       involvedRecords: [
         {
-          name: 'review_record',
-          customized: false,
+          name: '(SELECT r1.r_id, r2.avg_confidence_level FROM review_record r1, (SELECT r_submission_id, ROUND(AVG(r_confidence_level), 2) AS `avg_confidence_level` FROM review_record WHERE review_record.data_set = "${PLACEHOLDER_DATA_SET}" GROUP BY r_submission_id) r2\n' +
+                'WHERE r1.r_submission_id = r2.r_submission_id AND r1.data_set = "${PLACEHOLDER_DATA_SET}") as temp',
+          customized: true,
         }
       ],
       filters: [],
       joiners: [],
-      groupers: [
-        {
-          field: 'r_submission_id'
-        }
-      ],
+      groupers: [],
       sorters: [],
       extraData: {
         types: ['min', 'max', 'avg', 'median', 'std'],
@@ -1094,23 +1840,24 @@ export default {
       description: 'This table shows a statistic of the number of reviews for each submission based on  the minimum, maximum value, the average and median score. This gives us an insight to how many reviews are provided for each submission.',
       selections: [
         {
-          expression: 'COUNT(*)',
+          expression: 'temp.r_id',
+          rename: 'r_id'
+        },
+        {
+          expression: 'temp.number_of_review',
           rename: 'number_of_review'
         },
       ],
       involvedRecords: [
         {
-          name: 'review_record',
-          customized: false,
+          name: '(SELECT r1.r_id, r2.number_of_review FROM review_record r1, (SELECT r_submission_id, COUNT(*) AS `number_of_review` FROM review_record WHERE review_record.data_set = "${PLACEHOLDER_DATA_SET}" GROUP BY r_submission_id) r2\n' +
+          'WHERE r1.r_submission_id = r2.r_submission_id AND r1.data_set = "${PLACEHOLDER_DATA_SET}") as temp',
+          customized: true,
         }
       ],
       filters: [],
       joiners: [],
-      groupers: [
-        {
-          field: 'r_submission_id'
-        }
-      ],
+      groupers: [],
       sorters: [],
       extraData: {
         types: ['min', 'max', 'avg', 'median'],
@@ -3320,6 +4067,132 @@ export default {
             isColorfulBar: false,
           }
         }
-      }
+      },
 
+      "Number of Review Assignment based on Confidence Level": {
+        name: "Number of Review Assignment based on Confidence Level", // define the name of the chart
+        group: 'Review Record', // classify the group of record (author/submission/review)
+        data: {
+          // set the variables for bar chart
+          type: 'scatter_chart',
+          title: 'Number of Review Assignment based on Confidence Level',
+          dataSet: '${PLACEHOLDER_DATA_SET}',
+          description: 'This scatter chart shows the number of review assignment by confidence level.',
+          //determine the selections for select query
+          selections: [
+            {
+              expression: "r_reviewer_name",
+              rename: "r_reviewer_name"
+            },
+            {
+              expression: "r_confidence_level",
+              rename: "r_confidence_level"
+            },
+            {
+              expression: "r_num_review_assignment",
+              rename: "r_num_review_assignment"
+            }
+          ],
+          //determine the table name for query
+          involvedRecords: [
+            {
+              name: 'review_record',
+              customized: false,
+            }
+          ],
+          filters: [],
+          joiners: [],
+          //determine the field for group by clause
+          groupers: [
+
+          ],
+          sorters: [
+
+          ],
+          // set the labels, x and y axis, and modify chart style
+          extraData: {
+            dataSetLabel: 'Number of Review Assignments',
+            xAxisFieldName: 'r_confidence_level',
+            yAxisFieldName: 'r_num_review_assignment',
+            numOfResultToDisplay: 20,
+            fieldsShownInToolTips: [
+              {
+                label: 'Reviewer Name',
+                field: 'r_reviewer_name'
+              }
+            ],
+            isColorfulBar: true,
+          }
+        }
+      },
+
+
+
+      "Test": {
+        name: "Test", // define the name of the chart
+        group: 'Author Record', // classify the group of record (author/submission/review)
+        data: {
+          // set the variables for bar chart
+          type: 'graph_network',
+          title: 'Test',
+          dataSet: '${PLACEHOLDER_DATA_SET}',
+          description: 'Test',
+          //determine the selections for select query
+          selections: [
+            {
+              expression: "a1_name_pair",
+              rename: "a1_name_pair"
+            },
+            {
+              expression: "a2_name_pair",
+              rename: "a2_name_pair"
+            },
+            {
+              expression: "num_entries",
+              rename: "num_entries"
+            }
+          ],
+          //determine the table name for query
+          involvedRecords: [
+            {
+              name: "(select " +
+              "concat (a1.a_first_name,a1.a_last_name) as a1_name_pair,\n" +
+              "concat (a2.a_first_name,a2.a_last_name) as a2_name_pair,\n" +
+              "count(*) as Num_Entries\n" +
+              "from author_record as a1, author_record as a2\n" +
+              "where a1.data_set = '${PLACEHOLDER_DATA_SET}' and a2.data_set = '${PLACEHOLDER_DATA_SET}'\n" +          
+              "and a1.a_submission_id = a2.a_submission_id and a1.a_id < a2.a_id\n" +
+              "group by a1.a_id, a2.a_id\n" +
+              "order by count(*) desc)as temp",
+              customized: true,
+            }
+          ],
+          filters: [],
+          joiners: [],
+          //determine the field for group by clause
+          groupers: [
+
+          ],
+          sorters: [
+
+          ],
+          // set the labels, x and y axis, and modify chart style
+          extraData: {
+            linkMessage: [ 
+              {
+                msg: " has collaborated with  "
+              },
+              {
+                msg: " for  "
+              },
+              {
+                msg: " entries ",
+              }
+            ],
+            numOfResultToDisplay: 10,
+            isColorfulBar: true,
+            nodeMessage: "Name: ",
+          }
+        }
+      },
 }

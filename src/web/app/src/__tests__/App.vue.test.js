@@ -3,12 +3,14 @@ import ElementUI from 'element-ui';
 import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import App from '../App'
+import VuePageTransition from 'vue-page-transition'
 
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
 localVue.use(VueRouter);
 localVue.use(ElementUI);
+localVue.use(VuePageTransition);
 
 describe('App.vue', () => {
 

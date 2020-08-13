@@ -1,66 +1,71 @@
 <template>
   <el-row :gutter="20" class="map-container">
-    <!-- left part of the page -->
-    <el-col :span="10" :offset="1" class="map-area">
-      <!-- db fields -->
-      <div class="db-tags">
-        <h3>Database fields</h3>
-        <transition-group name="tags-group" tag="div">
-          <div class="tag" v-for="(item, idx) in dbList.fieldMetaDataList"
-               v-bind:key="idx"
-               v-bind:class="[ idx === selectedDBTag ? 'active' : '', mappedDBTag.includes(idx) ? 'hidden' : '' ]"
-               v-on:click="dbTagClicked(idx)">
-            {{ item.name }}
-          </div>
-        </transition-group>
-      </div>
-      <!-- end of db fields -->
-
-      <!-- imported tags -->
-      <div class="import-tags">
-        <h3>Imported data fields</h3>
-        <transition-group name="tags-group" tag="div">
-          <div class="tag" v-for="(item, idx) in importList"
-               v-bind:key="idx"
-               v-bind:class="[ idx === selectedImportTag ? 'active' : '', mappedImportTag.includes(idx) ? 'hidden' : '' ]"
-               v-on:click="importTagClicked(idx)">
-            {{ item }}
-          </div>
-        </transition-group>
-      </div>
-      <!-- end of imported tags -->
-
-      <!-- button group -->
-      <el-row class="button-row">
-        <el-col>
-          <el-button class="back-button" type="info" v-on:click="backClicked">Back</el-button>
-          <el-button class="back-button" type="success" v-on:click="uploadClicked">Upload</el-button>
-        </el-col>
-      </el-row>
-      <!-- end of button group -->
-    </el-col>
-    <!-- end of left part of the page -->
 
     <!-- right part of the page -->
     <el-col :span="12" class="map-result">
-      <h3>Mapping</h3>
-      <transition-group name="map-group" tag="div">
-        <div class="pair-tag" v-for="(item, index) in mappedPairs" v-bind:key="index">
-          <el-tag size="medium">{{ dbList.fieldMetaDataList[item[0]].type }}</el-tag>
-          <p class="pair-info">
-            {{ dbList.fieldMetaDataList[item[0]].name }}
-            <i class="el-icon-caret-right"></i>
-            {{ importList[item[1]] }}
-          </p><i class="el-icon-close" v-on:click="removeMapClicked(index)"></i><br>
+      <el-card>
+          <h3>Mapping</h3>
+          <transition-group name="map-group" tag="div">
+            <div class="pair-tag" v-for="(item, index) in mappedPairs" v-bind:key="index">
+              <el-tag size="medium">{{ dbList.fieldMetaDataList[item[0]].type }}</el-tag>
+              <p class="pair-info">
+                {{ dbList.fieldMetaDataList[item[0]].name }}
+                <i class="el-icon-caret-right"></i>
+                {{ importList[item[1]] }}
+              </p><i class="el-icon-close" v-on:click="removeMapClicked(index)"></i><br>
+            </div>
+          </transition-group>
+          <transition name="fade" mode="out-in">
+            <div class="no-map-info" v-show="mappedPairs.length === 0">
+              <p>No mapping specified!</p>
+            </div>
+          </transition>
+        </el-card>
+      </el-col>
+      <!-- end of right part of the page -->
+
+      <!-- left part of the page -->
+      <el-col :span="10" :offset="1" class="map-area">
+        <el-card>
+        <!-- db fields -->
+        <div class="db-tags">
+          <h3>Database fields</h3>
+          <transition-group name="tags-group" tag="div">
+            <div class="tag" v-for="(item, idx) in dbList.fieldMetaDataList"
+                v-bind:key="idx"
+                v-bind:class="[ idx === selectedDBTag ? 'active' : '', mappedDBTag.includes(idx) ? 'hidden' : '' ]"
+                v-on:click="dbTagClicked(idx)">
+              {{ item.name }}
+            </div>
+          </transition-group>
         </div>
-      </transition-group>
-      <transition name="fade" mode="out-in">
-        <div class="no-map-info" v-show="mappedPairs.length === 0">
-          <p>No mapping specified!</p>
+        <!-- end of db fields -->
+
+        <!-- imported tags -->
+        <div class="import-tags">
+          <h3>Imported data fields</h3>
+          <transition-group name="tags-group" tag="div">
+            <div class="tag" v-for="(item, idx) in importList"
+                v-bind:key="idx"
+                v-bind:class="[ idx === selectedImportTag ? 'active' : '', mappedImportTag.includes(idx) ? 'hidden' : '' ]"
+                v-on:click="importTagClicked(idx)">
+              {{ item }}
+            </div>
+          </transition-group>
         </div>
-      </transition>
+        <!-- end of imported tags -->
+
+        <!-- button group -->
+        <el-row class="button-row">
+          <el-col>
+            <el-button class="back-button" icon="el-icon-upload" type="success" v-on:click="uploadClicked">Upload</el-button>
+            <el-button class="back-button" icon="el-icon-back" type="info" v-on:click="backClicked">Back</el-button>
+          </el-col>
+        </el-row>
+      <!-- end of button group -->
+      </el-card>
     </el-col>
-    <!-- end of right part of the page -->
+    <!-- end of left part of the page -->
 
     <!-- dialogs -->
     <el-dialog
@@ -195,6 +200,9 @@
         this.$store.commit("clearHasHeader");
         this.$store.commit("clearMapping");
         this.$store.commit("clearPredefinedMapping");
+        this.$store.commit("clearVersionId");
+        this.$store.commit("clearPredefinedSwitch");
+        this.$store.commit("clearIsNewVersion");
       },
       uploadClicked: function () {
         let map = deepCopy(this.mappedPairs);
@@ -205,7 +213,11 @@
       },
       submitMapping: function () {
         this.hasSubmitted = false;
-        this.$store.dispatch("persistMapping");
+        if (this.$store.state.dataMapping.data.isNewVersion) {
+          this.$store.dispatch("persistMappingNewVersion");
+        } else {
+          this.$store.dispatch("persistMappingOldVersion");
+        }
       },
       closeSuccess: function () {
         this.$store.commit("setUploadSuccess", false);
@@ -217,6 +229,10 @@
         this.$store.commit("clearMapping");
         this.$store.commit("clearError");
         this.$store.commit("clearPredefinedMapping");
+        this.$store.commit("clearVersionId");
+        this.$store.commit("clearPredefinedSwitch");
+        this.$store.commit("clearIsNewVersion");
+        this.$store.dispatch('getVersionList');
       }
     },
     mounted() {

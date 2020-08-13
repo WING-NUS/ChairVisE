@@ -7,8 +7,10 @@ export default {
     hasFileUploaded: false,
     hasFormatTypeSpecified: false,
     hasTableTypeSelected: false,
+    hasVersionIdSpecified: false,
     hasHeaderSpecified: false,
     hasPredefinedSpecified: false,
+    hasPredefinedSwitchSpecified: false, // new
     hasMappingFinished: false,
     isUploadSuccess: false,
     data: {
@@ -19,7 +21,10 @@ export default {
       processedResult: [],
       formatType: null,
       tableType: null,
+      isNewVersion: null,
+      versionId: null,
       hasHeader: null,
+      hasPredefined: null, // new
       predefinedMapping: null,
       predefinedMappingId: null,
     },
@@ -64,13 +69,31 @@ export default {
     },
 
     setTableType(state, selected) {
-      state.data.tableType = selected;
+      state.data.tableType = selected;  
       state.hasTableTypeSelected = true;
     },
 
     clearTableType(state) {
       state.data.tableType = null;
       state.hasTableTypeSelected = false;
+    },
+
+    setVersionId(state, selected) {
+      state.data.versionId = selected;
+      state.hasVersionIdSpecified = true;
+    },
+
+    clearVersionId(state) {
+      state.data.versionId = null;
+      state.hasVersionIdSpecified = false;
+    },
+
+    setIsNewVersion(state, selected) {
+      state.data.isNewVersion = selected;
+    },
+
+    clearIsNewVersion(state) {
+      state.data.isNewVersion = null;
     },
 
     setHasHeader(state, hasHeader) {
@@ -93,6 +116,16 @@ export default {
       state.data.predefinedMapping = null;
       state.data.predefinedMappingId = null;
       state.hasPredefinedSpecified = false;
+    },
+
+    setPredefinedSwitch(state, hasPredefined) {
+      state.data.hasPredefined = hasPredefined;
+      state.hasPredefinedSwitchSpecified = true;
+    },
+
+    clearPredefinedSwitch(state) {
+      state.data.hasPredefined = null;
+      state.hasPredefinedSwitchSpecified = false;
     },
 
     setMapping(state, payload) {
@@ -129,7 +162,49 @@ export default {
   },
 
   actions: {
-    async persistMapping({commit, state}) {
+    async persistMappingNewVersion({commit, state}) {
+      commit("setPageLoadingStatus", true);
+      let endpoint;
+      let fnKeyTable;
+      switch (state.data.tableType) {
+        case 0:
+          endpoint = "author";
+          fnKeyTable = "AuthorRecord";
+          break;
+        case 1:
+          endpoint = "review";
+          fnKeyTable = "ReviewRecord";
+          break;
+        case 2:
+          endpoint = "submission";
+          fnKeyTable = "SubmissionRecord";
+          break;
+      }
+      var fnKeyEntry = {};
+      fnKeyEntry.versionId = state.data.versionId;
+      fnKeyEntry.recordType = fnKeyTable;
+      
+      // add version to end
+      for (var i=0; i<state.data.processedResult.length; i++){
+        var row = state.data.processedResult[i];
+        row.versionId = state.data.versionId;
+      }
+
+      // concurrent POST data and POST version requests 
+      axios.all([postTable(endpoint, state.data.processedResult), postVersion(fnKeyEntry)])  
+        .then(axios.spread( () => {
+          commit("setPageLoadingStatus", false);
+          commit("setUploadSuccess", true);
+        }))
+        .catch(axios.spread(function (dataErr, verErr) {
+          commit("setPageLoadingStatus", false);
+          commit("setUploadSuccess", false);
+          commit("setDataMappingError", dataErr);
+          commit("setDataMappingError", verErr);
+        }));
+    },
+
+    async persistMappingOldVersion({commit, state}) {
       commit("setPageLoadingStatus", true);
       let endpoint;
       switch (state.data.tableType) {
@@ -143,6 +218,12 @@ export default {
           endpoint = "submission";
           break;
       }
+      // add version to end
+      for (var i=0; i<state.data.processedResult.length; i++){
+        var row = state.data.processedResult[i];
+        row.versionId = state.data.versionId;
+      }
+      //console.log(state.data.processedResult);
       await axios.post("/api/record/" + endpoint, state.data.processedResult)
         .then(() => {
           commit("setPageLoadingStatus", false);
@@ -155,4 +236,11 @@ export default {
         });
     }
   }
+}
+function postVersion(fnKeyEntry) {
+  return axios.post("/api/version", fnKeyEntry);
+}
+
+function postTable(endpoint, processedResult) {
+  return axios.post("/api/record/" + endpoint, processedResult);
 }
