@@ -1,19 +1,36 @@
 package sg.edu.nus.comp.cs3219.viz.common.entity.record;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import org.hibernate.annotations.GenericGenerator;
+import sg.edu.nus.comp.cs3219.viz.common.util.Deserializer.ReviewRecordDeserializer;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
+@JsonDeserialize(using = ReviewRecordDeserializer.class)
 @Exportable(name = "Review Record", nameInDB = "review_record")
 @Entity
 public class ReviewRecord {
+    public ReviewRecord(){}
+
+    public ReviewRecord(Version v, String submissionId, String reviewId, int numReviewAssignment, String reviewerName, double expertiseLevel,
+                        double confidenceLevel, String reviewComment, double overallEvaluationScore, Date reviewSubmissionTime, String hasRecommendedForBestPaper){
+        this.id = null;
+        this.version = v;
+        this.submissionId = submissionId;
+        this.reviewId = reviewId;
+        this.numReviewAssignment = numReviewAssignment;
+        this.reviewerName = reviewerName;
+        this.expertiseLevel = expertiseLevel;
+        this.confidenceLevel = confidenceLevel;
+        this.reviewComment = reviewComment;
+        this.overallEvaluationScore = overallEvaluationScore;
+        this.reviewSubmissionTime = reviewSubmissionTime;
+        this.hasRecommendedForBestPaper = hasRecommendedForBestPaper;
+    }
 
     @Id
     @GenericGenerator(name = "UseExistingIdOtherwiseGenerateUsingIdentity", strategy = "sg.edu.nus.comp.cs3219.viz.common.entity.UseExistingIdOtherwiseGenerateUsingIdentity")
@@ -22,8 +39,21 @@ public class ReviewRecord {
     @Column(name = "r_id")
     private Long id;
 
+    /*
     // each record will be imported by each user, dataSet is used to distinguished records submitted by different user
     private String dataSet;
+
+    public String getDataSet() {
+        return dataSet;
+    }
+
+    public void setDataSet(String dataSet) {
+        this.dataSet = dataSet;
+    }
+    */
+
+    public Version getVersion(){return version;}
+    public void setVersion(Version version){this.version = version;}
 
     @Exportable(name = "Submission Id", nameInDB = "r_submission_id")
     @Column(name = "r_submission_id")
@@ -69,20 +99,20 @@ public class ReviewRecord {
     @Column(name = "r_has_recommended_for_best_paper")
     private String hasRecommendedForBestPaper;
 
+    @ManyToOne
+    @JoinColumns({
+            @JoinColumn(name = "data_set", referencedColumnName = "data_set"),
+            @JoinColumn(name = "record_type", referencedColumnName = "record_type"),
+            @JoinColumn(name = "version", referencedColumnName = "version"),
+    })
+    private Version version;
+
     public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getDataSet() {
-        return dataSet;
-    }
-
-    public void setDataSet(String dataSet) {
-        this.dataSet = dataSet;
     }
 
     public String getSubmissionId() {

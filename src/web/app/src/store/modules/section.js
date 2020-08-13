@@ -88,7 +88,6 @@ export default {
   actions: {
     async fetchSectionList({commit}, presentationId) {
       commit('setSectionListLoading', true);
-
       await axios.get(`/api/presentations/${presentationId}/sections`)
         .then(response => {
           commit('clearSectionList');
@@ -174,7 +173,7 @@ export default {
         })
     },
 
-    async sendPreviewAnalysisRequest({commit}, {presentationId, id, dataSet, selections, involvedRecords, filters, joiners, groupers, sorters}) {
+    async sendPreviewAnalysisRequest({commit}, {presentationId, id, dataSet, selections, involvedRecords, filters, joiners, groupers, sorters, versionId}) {
       commit('setSectionDetailLoading', {id, isLoading: true});
 
       await axios.post(`/api/presentations/${presentationId}/analysis`, {
@@ -184,7 +183,8 @@ export default {
         filters,
         joiners,
         groupers,
-        sorters
+        sorters,
+        versionId
       })
         .then(response => {
           commit('updateSectionAnalysisPreviewResult', {id, result: response.data});
@@ -197,7 +197,7 @@ export default {
         })
     },
 
-    async sendAnalysisRequest({state, commit}, {id, presentationId}) {
+    async sendAnalysisRequest({state, commit}, {id, presentationId, version}) {
       let sectionToAnalysis = findSectionDetailById(state.sectionList, id);
       commit('setSectionDetailLoading', {id: sectionToAnalysis.id, isLoading: true});
 
@@ -208,7 +208,8 @@ export default {
         filters: sectionToAnalysis.filters,
         joiners: sectionToAnalysis.joiners,
         groupers: sectionToAnalysis.groupers,
-        sorters: sectionToAnalysis.sorters
+        sorters: sectionToAnalysis.sorters,
+        versionId: version
       })
         .then(response => {
           commit('updateSectionAnalysisResult', {id: sectionToAnalysis.id, result: response.data});

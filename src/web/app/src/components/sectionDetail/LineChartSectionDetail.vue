@@ -1,5 +1,6 @@
 <template>
   <basic-section-detail :section-detail="sectionDetail" :presentation-id="presentationId" :has-data="hasData"
+                        :version="version"
                         :extraFormItemsRules="{}"
                         @update-visualisation="updateVisualisation">
     <line-chart :chart-data="chartData" :options="options"></line-chart>
@@ -46,6 +47,10 @@
         required: true
       },
       presentationId: {
+        type: String,
+        required: true
+      },
+      version: {
         type: String,
         required: true
       }

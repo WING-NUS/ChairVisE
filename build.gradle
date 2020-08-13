@@ -47,6 +47,14 @@ dependencies {
     compile("com.google.appengine:appengine-api-1.0-sdk:1.9.+")
     providedCompile("javax.servlet:javax.servlet-api:3.1.0")
 
+    // Fix the javax.xml.bind:jaxb-api exception
+    compile('javax.xml.bind:jaxb-api')
+
+    // Swagger 2 UI for API testing.
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
+    compile('org.springframework.boot:spring-boot-starter-web')
+
     // Database Access
     runtime("mysql:mysql-connector-java:8.0.12")
     runtime("com.google.cloud.sql:mysql-socket-factory:1.0.9")

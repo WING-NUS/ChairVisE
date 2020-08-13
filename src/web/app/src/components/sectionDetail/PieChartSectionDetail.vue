@@ -1,5 +1,6 @@
 <template>
   <basic-section-detail :section-detail="sectionDetail" :presentation-id="presentationId" :has-data="hasData"
+                        :version="version"
                         :extraFormItemsRules="{}"
                         @update-visualisation="updateVisualisation">
     <pie-chart :chart-data="chartData" :options="options"></pie-chart>
@@ -47,6 +48,10 @@
         required: true
       },
       presentationId: {
+        type: String,
+        required: true
+      },
+      version: {
         type: String,
         required: true
       }

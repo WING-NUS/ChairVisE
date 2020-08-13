@@ -1,5 +1,6 @@
 <template>
   <basic-section-detail :section-detail="sectionDetail" :presentation-id="presentationId" :has-data="hasData"
+                        :version="version"
                         :edit-form-selections-rule="editFormSelectionsRule"
                         :edit-form-involved-records-rule="editFormInvolvedRecordsRule"
                         :edit-form-filters-rule="editFormFiltersRule"
@@ -36,6 +37,10 @@
         required: true
       },
       presentationId: {
+        type: String,
+        required: true
+      },
+      version: {
         type: String,
         required: true
       }

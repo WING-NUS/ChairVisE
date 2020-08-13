@@ -52,6 +52,13 @@ public class AnalysisLogic {
         return jdbcTemplate.queryForList(sql);
     }
 
+    private String addVersionToNestedQuery(PresentationSection.Record record, String version){
+        String regex = "(\\w+\\S).data_set";
+        String strToMatch = record.getName();
+        strToMatch = strToMatch.replaceAll(regex, "$1.version = '" + version + "' AND $1.data_set" );
+        return strToMatch;
+    }
+
     private String generateSQL(AnalysisRequest analysisRequest) {
         String selectionsStr = analysisRequest.getSelections().stream()
                 .map(s -> s.getExpression() + String.format(" AS `%s`", s.getRename()))
@@ -61,7 +68,8 @@ public class AnalysisLogic {
         }
 
         String tablesStr = analysisRequest.getInvolvedRecords().stream()
-                .map(PresentationSection.Record::getName)
+                // band-aid fix. Total fix is too length
+                .map(x -> addVersionToNestedQuery(x, analysisRequest.getVersionId()))
                 .collect(Collectors.joining(","));
 
         String joinersStr = analysisRequest.getJoiners().stream()
@@ -72,9 +80,11 @@ public class AnalysisLogic {
                 .map(f -> String.format("%s %s %s", f.getField(), f.getComparator(), wrapValue(f.getField(), f.getValue())))
                 .collect(Collectors.joining(" AND "));
 
-        String dataSetFilter = analysisRequest.getInvolvedRecords().stream()
+        String dataSetVersionFilter = analysisRequest.getInvolvedRecords().stream()
                 .filter(r -> !r.isCustomized())
-                .map(t -> String.format("%s.data_set = '%s'", t.getName(), analysisRequest.getDataSet()))
+                .map(t -> String.format("%s.data_set = '%s' AND %s.version = '%s'",
+                        t.getName(), analysisRequest.getDataSet(),
+                        t.getName(), analysisRequest.getVersionId()))
                 .collect(Collectors.joining(" AND "));
 
         String groupersStr = analysisRequest.getGroupers().stream()
@@ -87,8 +97,8 @@ public class AnalysisLogic {
 
         String baseSQL = String.format("SELECT %s FROM %s", selectionsStr, tablesStr);
 
-        if (!dataSetFilter.isEmpty()) {
-            baseSQL += String.format(" WHERE %s", dataSetFilter);
+        if (!dataSetVersionFilter.isEmpty()) {
+            baseSQL += String.format(" WHERE %s", dataSetVersionFilter);
         } else {
             baseSQL += " WHERE true";
         }
@@ -111,7 +121,11 @@ public class AnalysisLogic {
         return baseSQL;
     }
 
+    // wrap value in '' if it is a non-numerical value
     String wrapValue(String fieldName, String val) {
+        if (!DATABASE_FIELD_NAME_TO_TYPE_MAP.containsKey(fieldName)){
+            return val;
+        }
         Class fieldType = DATABASE_FIELD_NAME_TO_TYPE_MAP.get(fieldName);
         if (Integer.class.equals(fieldType) || int.class.equals(fieldType)
                 || Double.class.equals(fieldType) || double.class.equals(fieldType)

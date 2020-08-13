@@ -1,44 +1,36 @@
 <template>
   <div>
-    <div>
-      <el-container>
-        <el-aside>
-          <ListOfGuide/>
-        </el-aside>
-        <el-main>
-          <WelcomeMessage/>
-          <FeatureGuide/>
-          <br/>
-          <DetailedFeatureGuide/>
-        </el-main>
-      </el-container>
-    </div>
+    <BannerDetail></BannerDetail>
+    <FeatureListDetail></FeatureListDetail>
   </div>
 </template>
 
 <script>
   // @ is an alias to /src
-  import WelcomeMessage from '@/components/homePageDetail/WelcomeMessage.vue'
-  import FeatureGuide from '@/components/homePageDetail/FeatureGuide.vue'
-  import DetailedFeatureGuide from '@/components/homePageDetail/DetailedFeatureGuide.vue'
-  import ListOfGuide from '@/components/homePageDetail/ListOfGuide.vue'
+  import BannerDetail from '@/components/homePageDetail/BannerDetail.vue'
+  import FeatureListDetail from '@/components/homePageDetail/FeatureListDetail.vue'
 
   export default {
     name: 'home',
     components: {
-      WelcomeMessage,
-      FeatureGuide,
-      DetailedFeatureGuide,
-      ListOfGuide
+      BannerDetail,
+      FeatureListDetail
     }
   }
+  
 </script>
-<style scoped>
-  .el-aside {
-    width: 250px;
+<style>
+  .navbar-submenu-menu {
+    margin-top: -5px;
+    left: initial !important;
+    right: 0;
   }
 
-  .el-main {
-    margin: 30px;
+  .el-menu--horizontal > .navbar-submenu.is-active .el-submenu__title {
+    border-bottom: 0;
+  }
+
+  .el-submenu.is-active .el-submenu__title {
+    border-bottom: 0;
   }
 </style>
