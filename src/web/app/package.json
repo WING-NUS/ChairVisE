@@ -27,7 +27,7 @@
     "jquery": "^3.5.1",
     "jspdf": "^1.4.1",
     "moment": "^2.27.0",
-    "papaparse": "^4.6.1",
+    "papaparse": "^5.2.0",
     "pptxgenjs": "^3.2.1",
     "simple-statistics": "^6.1.1",
     "vue": "^2.6.11",
