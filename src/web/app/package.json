@@ -14,7 +14,7 @@
     "@fullcalendar/interaction": "^4.4.2",
     "@fullcalendar/timegrid": "^4.4.2",
     "@fullcalendar/vue": "^4.4.2",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "canvas": "^2.6.1",
     "chart.js": "^2.9.3",
     "chartjs-plugin-datalabels": "^0.4.0",
