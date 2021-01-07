@@ -1,3 +1,0 @@
-spring.jpa.hibernate.ddl-auto=update
-spring.datasource.url=<datasourceURL>
-spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
