@@ -1,0 +1,625 @@
+"submission #","first name","last name",email,country,organization,"Web page","person #",corresponding?
+2,Laxxx,Kaxx,xxxxxxxxdiana.edu,"United States","Indiana University Bloomington",https://thedxxxxxxxxxxx,465,yes
+3,Yx,Shxx,xxxxxxx8@vt.edu,"United States","Virginia Tech",https://johnshopkinsxxxxxxxxxxxxxxxxxxxx,90,yes
+4,Mubxxxxx,Imxxx,xxxxxxxxxxxxan@itu.edu.pk,Pakistan,"Information Technology University",http://slabxxxxxxxxxxx,163,no
+4,Saexxxxx,Haxxxx,xxxxxxxxxxxxxan@itu.edu.pk,Pakistan,"Information Technology University",http://www.xxxxxxxxxx,164,yes
+4,Sehxxxx,Iqxxxx,xxxxxxxxxxitu.edu.pk,Pakistan,"Information Technology University",http://slabxxxxxxxxxxx,165,no
+4,Naxx,Aljxxxxx,xxxxxxxxxx@kau.edu.sa,"United Kingdom","University of Southampton",,166,no
+4,Axx,Daxx,xxxxxxxxxx@kau.edu.sa,"Saudi Arabia","King Abdulaziz University",,167,no
+5,Devxxxxx,Poxxxx,xxxxxxx@utk.edu,"United States","University of Tennessee at Knoxville",,168,yes
+5,Reyxxxx,Regensxxxxxxxxxxx,xxxxxxxxxxxxxxxxxif-harms04@utc.edu,"United States","University of Tennessee at Chattanooga",,169,no
+5,Dwxxxx,Huxxxx,xxxxxxxxxxxxxxxxxttanoogastate.edu,"United States","Chattanooga State Community College",,170,no
+6,Jxx,Haxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",http://orcid.org/0xxxxxxxxxxxxxxxxxx,39,yes
+7,Omxx,Alxxxx,xxxxxxxxxgmail.com,"United States",Microsoft,,171,yes
+7,Vasxxxx,Kanxxxxx,xxxxxxxxxxxcrosoft.com,"United States",Microsoft,,172,yes
+7,Serxxxxxxx,Trexxxxx,xxxxxxxxxxcrosoft.com,"United States",Microsoft,,173,yes
+8,Axx,Shxxx,xxxxxxxxxlberta.ca,Canada,"University of Alberta",,92,yes
+9,Nhuxxxx,Ngxxxx,xxxxxxxxxxxxen@univ-lr.fr,France,"Lab L3I,  University of La Rochelle",,376,yes
+9,Micxxxxx,Couxxxxx,xxxxxxxxxuniv-lr.fr,France,"Laboratoire L3i - UniversitÃ© de La Rochelle",,377,yes
+9,Jeaxxxxxx,Ogxxx,xxxxxxxxxxxxxer@univ-lr.fr,France,"University of La Rochelle, Laboratoire L3i",http://perso.unixxxxxxxxxxxxxxx,75,yes
+10,Jaxxxx,Strxxxxxx,xxxxxxxxxxxxxgen@gmail.com,Germany,"Max Planck Institute for Informatics",,174,yes
+10,Roxxxx,Andxxxx,xxxxxxxxxxxi-inf.mpg.de,Germany,"Max Planck Institute for Informatics",,175,no
+10,Dhxxx,Guxxx,xxxxxxxxxxx-inf.mpg.de,Germany,"Max Planck Institute for Informatics",,176,yes
+12,Abxx,Elxxxx,xxxxxxxxxxx@hotmail.com,Germany,"Karlsruhe Institute of Technology, Institute for Program Structures and Data Organization",,177,yes
+12,Adxxxx,Engxxxxxx,xxxxxxxxxxxxardt@kit.edu,Germany,"Karlsruhe Institute of Technology, Institute for Program Structures and Data Organization",,178,yes
+12,Maxxxx,Schxxxxx,xxxxxxxxxxxeler@kit.edu,Germany,"Karlsruhe Institute of Technology",,179,yes
+12,Klexxxx,Bأxxx,xxxxxxxxxxehm@kit.edu,Germany,"Karlsruhe Institute of Technology",,16,yes
+13,Joأ£xxxxxxxx,"de Frexxxxxxxxxxxxx",xxxxxxxxxxo@gmail.com,Brazil,"Universidade Federal de Minas Gerais",,180,yes
+13,Berxxxxx,Ribexxxxxxxx,xxxxxxxxxxxxxufmg@gmail.com,Brazil,"Universidade Federal de Minas Gerais",http://www.dcc.ufmg.brxxxxxxxxxxxxxxxxxxxxxx,181,yes
+14,Kexxxx,Rexx,xxxxxxxxxxxid@gmail.com,"United States","University of South Florida",,466,yes
+14,Suxxx,Vanxxxxxxx,xxxxxxxx@usf.edu,"United States","University of South Florida",,467,no
+15,Wxx,Lxx,xxxxxxxxxxxecnu.edu.cn,China,"Faculty of economics and management, East China Normal University",,378,yes
+15,Hxx,Waxx,xxxxxxxx06@qq.com,China,"Faculty of economics and management, East China Normal University",,379,no
+16,Toxxxx,Baxxxx,xxxxxxxxxxxes@gesis.org,Germany,"GESIS - Leibniz-Institute for the Social Sciences",,182,yes
+17,Nixxxx,Fexxx,xxxxxxxxx.unipd.it,Italy,"University of Padova",http://www.dei.uxxxxxxxxxxxxxxx,28,yes
+17,Giaxxxxxx,Silxxxxx,xxxxxxxxxxei.unipd.it,Italy,"University of Padova",http://www.dei.unxxxxxxxxxxxxxxxxx,93,yes
+17,Erxx,Bruxxxxx,xxxxxxxxxxxxkx@kikirpa.be,Belgium,"Royal Institute for Cultural Heritage",,183,no
+17,Boxxx,Douxxxx,xxxxxxxxxxxxv@duallab.com,Belgium,"Dual Lab, Belgium",,184,no
+17,Antxxxxxx,Frxxx,xxxxxxxxomoter.it,Italy,Promoter,,185,no
+17,Maxxxx,Gexxx,xxxxxxxxxxxxxriksarkivet.se,Sweden,"Swedish National Archives Riksarkivet, Sweden",,186,no
+17,Klxx,Jadxxxxxx,xxxxxxxxxxxxxx@riksarkivet.se,Sweden,"Swedish National Archives Riksarkivet, Sweden",,187,no
+17,Boجxxxx,Jusxxxxx,xxxxxxxxxxxxxx@riksarkivet.se,Sweden,"Swedish National Archives Riksarkivet, Sweden",,188,no
+17,Bexx,Lemxxxx,xxxxxxxcked.be,Belgium,"Center of Expertise in Digital Heritage," PACKED", Belgium",,189,no
+17,Jerxxxxx,Marxxxxx,xxxxxxxxxxiaarea.net,France,"MediaArea, France",,190,no
+17,Viجxxxxx,Munxxxx,xxxxxxxxxxxxxasyinnova.com,Spain,"Easy Innova, Spain",,191,no
+17,Soجxxxx,Olixxxxx,xxxxxxxxxxxjgirona.cat,Spain,"Records Management," Archives and Publications Service Girona City Council", Spain",,192,no
+17,Claxxxx,Praxxxxx,xxxxxxxxxaedeka.com,Italy,Aedeka,,193,no
+17,Daxx,Rixx,xxxxxxxxiced.com,France,MediaArea,,194,no
+17,Stxxxx,Rohdxxxxxxxx,xxxxxxxxxxxxxxxxmb.spk-berlin.de,Germany,"Institute for Museum Research Prussian Cultural Heritage Foundation," SPK", Germany",,195,no
+17,Xaxx,Tarxxxxx,xxxxxxxxxxxxasyinnova.com,Spain,"Easy Innova, Spain",,196,no
+17,Erxxx,Verxxxxxxx,xxxxxxxxxxxxxxeldengeluid.nl,Netherlands,"Sound and Vision, The Netherlands",,197,no
+17,Benxxxxx,Youxxxx,xxxxxxxxxxxxxxxi@riksarkivet.se,Sweden,"Swedish National Archives Riksarkivet, Sweden",,198,no
+17,Caxx,Wixxxx,xxxxxxxxxxxxservation.org,"United Kingdom","Open Preservation Foundation, UK",,199,no
+18,Abxxx,Jaxx,xxxxxxxxxx@gmail.com,India,"Indian Institute of Technology, Kharagpur",,200,yes
+18,Anixxxx,Mukxxxxxx,xxxxxxxxxgmail.com,India,"Indian Institute of Technology, Kharagpur",Http://cse.iitkgpxxxxxxxxxxxxxxxxx,69,yes
+18,Paxxx,Goxxx,xxxxxxxxxxk@gmail.com,India,"IIT Kharagpur",,201,yes
+20,Hxx,Sxx,xxxxxxxcpp.edu,"United States","California State Polytechnic University, Pomona",,468,yes
+20,Wx,Hx,xxxxxdu.edu,"United States","Old Dominion University",,469,yes
+20,Guaxxxxx,Xx,xxxxxxxxxxx@uts.edu.au,Australia,"University of Technology, Sydney",,470,no
+21,Maxxxx,Sixxx,xxxxxxxxxxxxxxxx.iitkgp.ernet.in,India,"Indian Institute of Technology, Kharagpur",http://cse.iitkgp.axxxxxxxxxxxxxxxxxxx,202,yes
+21,Arixxxx,Pxx,xxxxxxxxxgmail.com,India,"TCS Innovation Labs",http://www.cse.iitxxxxxxxxxxxxxxxxxx,203,yes
+21,Lixxxx,Dxx,xxxxxxxxxy@tcs.com,India,"TCS Innovation Labs",,204,no
+21,Anixxxx,Mukxxxxxx,xxxxxxxxxxxxxxitkgp.ernet.in,India,"Indian Institute of Technology, Kharagpur",http://cse.iitkgpxxxxxxxxxxxxxxxxx,69,no
+22,Shexxxx,Dexx,xxxxxxxxx@sina.com,China,"Wuhan University",,205,yes
+22,Shaxxxxxx,Fx,xxxxxxxx63@qq.com,China,"Wuhan University",,206,no
+23,Roxxxx,Alxxx,xxxxxxacm.org,"South Korea","Yonsei University",http://bobaxxxxxxxxxx,5,yes
+23,Yooxxxxx,Kxx,xxxxxxxxxx@naver.com,"South Korea","Yonsei University",,380,no
+24,Wxx,Lx,xxxxxxxxu.edu.cn,China,"wuhan university",,307,yes
+24,Jexxx,Wexx,,"United States","University of Washington",,471,no
+24,Brxxx,Oâ€xxxxxxx,,"United States","University of North Texas",,472,no
+24,Kryxxxxx,Matxxxxx,,"United States","University of Denver",,473,no
+24,Qinxxxx,Zxx,,China,"Nanjing University",,474,no
+24,Jaxxx,Lx,,"United States","Cincinnati Children’s Hospital Medical Center",,475,no
+24,Jiaxxxxxx,Chxx,xxxxxxxxxxxhen@unt.edu,"United States","University of North Texas",,476,yes
+25,Pexx,Zhxx,xxxxxxxxxzju.edu.cn,China,"Zhejiang University",,207,yes
+25,Yinxxxxx,Zxx,xxxxxxxx1@163.com,China,"Zhejiang University",,208,no
+25,Jixxxx,Yx,xxxxxxxxxju.edu.cn,China,"Zhejiang University",,209,no
+25,Yxx,Zhxxx,xxxxxxxxu.edu.cn,China,"Zhejiang University",http://www.dcd.zju.edu.cn/62xxxxxxxxxxxxxxxxxxxxxxxxxxx,210,no
+25,Jiaxxxxx,Wx,xxxxxxxu.edu.cn,China,"Zhejiang University",http://www.dcd.zju.edu.cn/6210xxxxxxxxxxxxxxxxxxxxxxxxxxxxx,211,no
+26,Lixxxx,Zhxx,xxxxxxxxhu.edu.cn,China,"School of Information Management, Wuhan University",,381,yes
+26,Xixxx,Lx,xxxxxxxxxwhu.edu.cn,China,"School of Information Management, Wuhan University",,382,no
+26,Txx,Zijxxxxx,xxxxxxxxxxxa@gmail.com,"United Kingdom","University of Derby",,383,no
+27,Juxxxx,Rixxx,xxxxxxxxxsch@hpi.de,Germany,"Hasso Plattner Institute," University of Potsdam", Germany",,212,yes
+27,Raxx,Krexxxx,xxxxxxxxxtel@hpi.de,Germany,"Hasso Plattner Institute," University of Potsdam", Germany",https://hpi.de/naumann/wexxxxxxxxxxxxxxxxxxxxxxxxx,213,no
+28,Souxxxx,Ghxxx,xxxxxxxxxxxxh@rutgers.edu,"United States","Rutgers University",https://comminfo.rutgxxxxxxxxxxxxxxxxxxxxx,214,yes
+28,Chxxxx,Shxx,xxxxxxxxxutgers.edu,"United States","Rutgers University",http://comminfo.rutxxxxxxxxxxxxxxxxxx,215,yes
+29,Floxxxx,Mxx,xxxxxxxxxxxxl.uni-kiel.de,Germany,"Christian-Albrechts-University Kiel",,216,yes
+29,Luxxx,Gaxxx,xxxxxxxxxxxxxk.uni-kiel.de,Germany,"Kiel University",http://xxxxxxx,217,yes
+29,Anxxxx,Scxxxx,xxxxxxxxxxrscherp.net,Germany,"Kiel University and ZBW -- Leibniz Information Center for Economics," Kiel", Germany",http://www.ansgarxxxxxxxxxxxxxxxxx,218,yes
+31,Noxx,Sixxxx,xxxxxxx@uw.edu,"United States","Allen Institute for Artificial Intelligence",,219,yes
+31,Nicxxxxx,Loxxxx,xxxxxxxxlenai.org,"United States","Allen Institute for Artificial Intelligence",,220,yes
+31,Rusxxxx,Poxxx,xxxxxxxxxxxer@gmail.com,"United States","Allen Institute for Artificial Intelligence",http://rjxxxxxxxxx,221,yes
+31,Waxxxx,Amxxx,xxxxxxxxxllenai.org,"United States","Allen Institute for Artificial Intelligence",,222,yes
+32,Kx,Yuxx,xxxxxxxxku.edu.cn,China,"Peking University",,384,yes
+32,Liaxxxxx,Gxx,xxxxxxxxxai@163.com,China,"Peking University",,385,no
+32,Zhuxxxx,Jixxx,xxxxxxxxxxxxxl.sysu.edu.cn,China,"Sun Yat-sen University",,386,yes
+32,Zxx,Taxx,xxxxxxxxxku.edu.cn,China,"Peking University",,325,no
+33,Madhxxxxxxxx,Priyxxxxxxxx,xxxxxxxxbbs.ac.in,India,"Indian Institute of Technology," Bhubaneswar", India",,223,yes
+34,Madhxxxxxxxx,Priyxxxxxxxx,xxxxxxxxbbs.ac.in,India,"Indian Institute of Technology," Bhubaneswar", India",,223,yes
+35,Shexxxx,Dexx,xxxxxxxxx@sina.com,China,"Wuhan University",,205,yes
+35,Jinxxxxx,Toxx,xxxxxxxx07@qq.com,China,"Wuhan University",,387,no
+35,Shaxxxxxx,Fx,xxxxxxxx63@qq.com,China,"Wuhan University",,206,no
+36,Shexxxx,Dexx,xxxxxxxxx@sina.com,China,"Wuhan University",,205,yes
+36,Haixxxx,Zhxx,xxxxxxxx3@qq.com,China,"Wuhan University",,388,no
+36,Yaxx,Qxx,xxxxxxxx42@qq.com,China,"Wuhan University",,389,no
+37,Hexxx,Holxxxxx,xxxxxxxn@L3S.de,Germany,"L3S Research Center",,224,yes
+37,Mixx,Runxxxxxx,xxxxxxxxxxerth@tib.eu,Germany,"German National Library of Science and Technology (TIB)",,225,yes
+38,Hexxx,Holxxxxx,xxxxxxxn@L3S.de,Germany,"L3S Research Center",,224,yes
+38,Avixxxx,Anxxx,xxxxxxL3S.de,Germany,"L3S Research Center",http://www.l3xxxxxxxxxxxx,226,yes
+38,Mexxx,Khxxxx,xxxxxx@l3s.de,Germany,"L3S Research Center, Leibniz University",,227,yes
+39,Jxx,Haxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",https://orcid.org/0xxxxxxxxxxxxxxxxxx,39,yes
+40,Shexxxx,Dexx,xxxxxxxxx@sina.com,China,"Wuhan University",,205,yes
+40,Yuxxxx,Jixxx,xxxxxxxx2@qq.com,China,"Wuhan University",,228,no
+40,Tixx,Fx,xxxxxxxx5@qq.com,China,"Wuhan University",,229,no
+41,Dixxxx,Sidxxxxx,xxxxxxxxxxt@gmail.com,India,"Indian Institute of Technology Ropar",http://www.iitrpr.xxxxxxxxxxxxxxxxxx,390,yes
+42,Jeanxxxxxxxxx,Moxxxx,xxxxxxxxxxxxx.moreux@bnf.fr,France,BnF,,391,yes
+42,Guixxxxxx,Chxxxx,xxxxxxxxxuniv-lr.fr,France,"University of La Rochelle",,392,no
+43,Luxx,Mckxxxx,xxxxxxxxxxxxxadaptcentre.ie,Ireland,"Trinity College Dublin",,230,yes
+43,Chrxxxxxxx,Debxxxxx,xxxxxxxxxxxxxxruyne@odisee.be,Belgium,"University College Odisse",,374,no
+43,Dexxxx,O'Sxxxxxxx,xxxxxxxxxxxxxvan@cs.tcd.ie,Ireland,"Trinity College Dublin",,232,no
+44,Nicxxxxx,Coxx,xxxxxxxxxxxxxxxistory.ox.ac.uk,"United Kingdom","University of Oxford",,233,yes
+44,Alxxx,Abduxxxxxxxx,xxxxxxxxxxxxxhman@gmail.com,"United Kingdom","University of Oxford",,1,yes
+45,Haxxx,Alhxxxxx,xxxxxxxxxuottawa.ca,Canada,"University of Ottawa",,234,yes
+45,Dixxx,Inxxxx,xxxxxxxxxxxn@uottawa.ca,Canada,"University of Ottawa",http://www.site.uxxxxxxxxxxxxxxxxx,235,no
+45,Stxx,Szpxxxxxxx,xxxxxxxxxx.uottawa.ca,Canada,"University of Ottawa",http://www.site.uxxxxxxxxxxxxxxxxx,236,no
+46,Saxx,Fatxxxxx,xxxxxxxxxxx.uni-bonn.de,Germany,"Faculty of Science," University of Alexandria and Enterprise Information Systems", University of Bonn",,237,yes
+46,Saxxx,Vahxxxx,xxxxxxxxxxxuni-bonn.de,Germany,"University of Bonn",,238,yes
+46,Sأxxxx,Auxx,xxxxxl3s.de,Germany,"TIB Leibniz Information Center Science & Technology and University of Hannover",http://vivo.tib.eu/fis/disxxxxxxxxxxxxxxxxxxxxxxxxxx,239,yes
+46,Chrxxxxxx,Laxxx,xxxxxxxxxxuni-bonn.de,Germany,"University of Bonn & Fraunhofer IAIS, Germany",http://langec.worxxxxxxxxxxxxxxxx,240,yes
+47,Sanxxxxx,Sixxxx,xxxxxxxxxxxxxxxxxe.iitkgp.ernet.in,India,"Indian Institute of Technology Kharagpur",,241,yes
+47,Nixxxx,Sexxxx,xxxxxxxxxxxr@gmail.com,India,"IIT Kharagpur",,242,no
+47,Maxxxx,Marxxxx,xxxxxxx@ictp.it,Italy,"ICTP Trieste",,155,no
+47,Nixxx,Ganxxxx,xxxxxxxxxxxxxxgooglemail.com,India,"Indian Institute of Technology Kharagpur",http://facweb.iitkgxxxxxxxxxxxxxxxxxx,35,no
+47,Anixxxx,Mukxxxxxx,xxxxxxxxxgmail.com,India,"Indian Institute of Technology, Kharagpur",Http://cse.iitkgpxxxxxxxxxxxxxxxxx,69,no
+48,Dhxxx,Guxxx,xxxxxxxxxxx-inf.mpg.de,Germany,"Max Planck Institute for Informatics",,176,yes
+48,Klxxx,Berxxxxxx,xxxxxxxxxxxi-inf.mpg.de,Germany,"Max Planck Institute for Informatics",http://www.mpi-infxxxxxxxxxxxxxxxxx,243,yes
+48,Jaxxxx,Strxxxxxx,xxxxxxxxxxxxxgen@gmail.com,Germany,"Max Planck Institute for Informatics",,174,yes
+48,Demxxxxxx,Zeinalxxxxxxxxxxx,xxxxxxxxx.ucy.ac.cy,Cyprus,"University of Cyprus",http://www.cs.ucxxxxxxxxxxxxxxxx,244,yes
+49,Maxxxx,Klxxx,xxxxxxxxxxxx815@gmail.com,"United States","Los Alamos National Laboratory",,56,yes
+49,Zhxxx,Xxx,xxxxxxxe@vt.edu,"United States","Virginia Tech",,113,yes
+49,Edxxxx,Fxx,xxxxxt.edu,"United States","Virginia Tech",http://foxxxxxxxxxxx,30,yes
+50,Brxxx,Lexx,xxxxxxxxxx@unthsc.edu,"United States","National Network of Libraries of Medicine South Central Region",https://nnxxxxxxxxxx,477,yes
+52,Danxxxx,Gixx,xxxxxxxxxxxx73@gmail.com,Romania,"""Alexandru Ioan Cuza"" University",https://profs.info.uaxxxxxxxxxxxxxxxxxxxx,36,yes
+52,Dixxx,Traxxxxxx,xxxxxxxxxxxinfo.uaic.ro,Romania,"Faculty of Computer Science Iasi",http://profs.info.uxxxxxxxxxxxxxxxxxx,448,yes
+52,Kexxx,Coxxx,,"United States","U. Colorado School of Medicine",,478,no
+52,Jixxxx,Xxx,,China,"Huazhong Agricultural University",http://xiajingxxxxxxxxxxxxxx,479,no
+53,Haxx,Alsxxxx,xxxxxxxxy.fsu.edu,"United States","Florida State University",,393,yes
+54,Ilxx,Makxxxx,xxxxxxxxv@hse.ru,Russia,"National Research University Higher School of Economics",http://www.hse.ru/xxxxxxxxxxxxxxxxxx,245,yes
+54,Olxx,Gerxxxxxxx,xxxxxxxxxx@gmail.com,Russia,"National Research University Higher School of Economics",http://hse.ru/en/xxxxxxxxxxxxxxxxx,246,yes
+54,Leoxxxxxx,Zhxxxx,xxxxxxx@hse.ru,Russia,"National Research University Higher School of Economics, School of Data Analysis and Artificial Intelligence",http://hse.ru/exxxxxxxxxxxxxxx,247,no
+55,Apxxx,Clybuxxxxxxxxxx,xxxxxxxxxeocean.com,"United States","Code Ocean",https://www.linkedin.com/in/apxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,480,yes
+56,Noxxxx,Meuxxxxx,xxxxxxxhke.org,Germany,"University of Konstanz",http://www.mxxxxxxxxxxx,67,yes
+56,Chrixxxxxxx,Goxxxx,xxxxxxxxxxxxxxxxxk@uni-konstanz.de,Germany,"University of Konstanz",,248,no
+56,Daxxxx,Seexxxxxx,xxxxxxxxxxxxxxxxxnf.uni-konstanz.de,Germany,"University of Konstanz",https://www.vis.uni-konstanxxxxxxxxxxxxxxxxxxxxxxxxxx,249,no
+56,Corxxxx,Brexxxxxxx,xxxxxxxxxxxxxxxxxr@uni-konstanz.de,Germany,"University of Konstanz",https://www.isg.uni-konstanz.de/people/dxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,117,no
+56,Daxxxx,Kexx,xxxxxxxxxxonstanz.de,Germany,"University of Konstanz",https://www.vis.uni-konsxxxxxxxxxxxxxxxxxxxxxxxx,251,no
+56,Bexx,Gixx,xxxxxxipp.com,Germany,"University of Konstanz",http://wwwxxxxxxxxx,37,no
+57,Stxxxx,Buxx,xxxxxxxxxxxxxooglemail.com,Germany,Merantix,,252,no
+57,Raxx,Krexxxx,xxxxxxxxxtel@hpi.de,Germany,"Hasso Plattner Institute," University of Potsdam", Germany",https://hpi.de/naumann/wexxxxxxxxxxxxxxxxxxxxxxxxx,213,yes
+58,Maxxxx,Kaxx,xxxxxxfiu.edu,"United States","Florida International University",,394,yes
+59,Jexx,Wilxxxxx,xxxxxxxxxxomm@kit.edu,Germany,"Karlsruhe Institute of Technology",,253,yes
+59,Chrxxxxxx,Schmxxxxxxxxx,xxxxxxxxxxxxxxxdt-petri@kit.edu,Germany,"Karlsruhe Institute of Technology",,254,no
+59,Maxxxx,Schxxxxx,xxxxxxxxxxxeler@kit.edu,Germany,"Karlsruhe Institute of Technology",,179,yes
+59,Micxxxx,Schxxxxxx,xxxxxxxxxxxxfczyk@kit.edu,Germany,"Karlsruhe Institute of Technology",,255,no
+59,Klexxxx,Bأxxx,xxxxxxxxxxehm@kit.edu,Germany,"Karlsruhe Institute of Technology",,16,yes
+60,Texxxx,Bogxxxx,xxxxxxxxxxaard@cwi.nl,Netherlands,"Centrum Wiskunde & Informatica (CWI)",https://wwxxxxxxxxx,256,yes
+60,Laxxx,Holxxxx,xxxxxxxxk@cwi.nl,Netherlands,"Centrum Wiskunde & Informatica (CWI)",http://homepages.xxxxxxxxxxxxxxxx,257,yes
+60,Jxx,Wiexxxxxxx,xxxxxxxxxker@vu.nl,Netherlands,"Vrije Universiteit Amsterdam",http://www.csxxxxxxxxxxxxx,258,yes
+60,Lyxxx,Harxxxx,xxxxxxxxxxman@cwi.nl,Netherlands,"Centrum Wiskunde & Informatica (CWI)",http://www.cxxxxxxxxxxxx,259,yes
+60,Jaxxx,"van Oxxxxxxxxxxx",xxxxxxxxxxxxxxnbruggen@cwi.nl,Netherlands,"CWI & VU University Amsterdam",http://homepages.xxxxxxxxxxxxxxxx,260,yes
+62,Yuxx,Zhxxx,xxxxxxxunt.edu,"United States","University of North Texas",,261,no
+62,Hsixxxxxxx,Chxxx,xxxxxxxxxxxxhang@unt.edu,"United States","University of North Texas",http://informationscience.unt.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,262,yes
+62,Brxxx,O'Cxxxxx,xxxxxxxxxxxnor@unt.edu,"United States","University of North Texas",,263,no
+63,Danxxxx,Gixx,xxxxxxxxxxxx73@gmail.com,Romania,"""Alexandru Ioan Cuza"" University, Iasi & Romanian Academy - Iasi branch",https://profs.info.uxxxxxxxxxxxxxxxxxxxx,36,yes
+63,Raxxx,Chexxxx,xxxxxxxxxxxxx@info.uaic.ro,Romania,"""Alexandru Ioan Cuza"" University, Iasi",,395,no
+64,Paxxxx,Andxxxx,xxxxxxxxxxxews@unt.edu,"United States","University of North Texas",,396,yes
+64,Kaxxx,Haxxxx,xxxxxxxxxxer@unt.edu,"United States","University of North Texas",,397,no
+64,Axx,Kraxxxx,xxxxxxxxxer@unt.edu,"United States","University of North Texas",,398,no
+65,Chxxx,Holxxxxx,xxxxxxxo@uw.edu,"United States","University of Washington",,399,yes
+66,Dxx,Wx,xxxxxxxxhu.edu.cn,China,"School of Information Management, Wuhan University",,162,yes
+66,Shxxxx,Lixxx,xxxxxxxxxxxfoxmail.com,China,"School of Information Management, Wuhan University",,400,no
+67,Saxxxx,Doxxxx,xxxxxxxxxail.ubc.ca,Canada,"The University of British Columbia",,401,yes
+67,Luxxxx,Frxxxx,xxxxxxxxxxund@ubc.ca,Canada,"The University of British Columbia",http://faculty.artxxxxxxxxxxxxxxxxx,402,yes
+67,Rixx,Koxxx,xxxxxxx@ubc.ca,Canada,"School of Library," Archival and Information Studies", University of British Columbia",,403,yes
+68,Douxxxxxxx,Kenxxxx,xxxxxxxxxurnals.com,"United States","Historic Journals",,404,yes
+69,Atxx,Laxxx,xxxxxxx@zbw.eu,Germany,"ZBW - Leibniz Information Center forEconomics",,405,yes
+69,Tixx,Boxxx,xxxxxxx@zbw.eu,Germany,"ZBW - Leibniz Information Center forEconomics",,406,no
+69,Klxxx,Tochxxxxxxx,xxxxxxxxxxann@zbw.eu,Germany,"ZBW - Leibniz Information Center forEconomics",,407,no
+70,Timxxxxxx,Enxxxx,xxxxxxxxxxxxantwerpen.be,Belgium,"University of Antwerp",,264,yes
+70,Hanxxxxxxx,Puxxxx,xxxxxxxxxxxxuuske@csc.fi,Finland,"CSC – IT Center for Science",,265,no
+70,Rxx,Guxx,xxxxxxxxxxxntwerpen.be,Belgium,"University of Antwerp",,266,no
+70,Jaxxx,Pأ¶xxxxxx,xxxxxxxxxxnen@tsv.fi,Finland,"Federation of Finnish Learned Societies",,267,no
+70,Guxxxx,Sivxxxxxx,xxxxxxxxxxxxtsen@nifu.no,Norway,"Nordic Institute for Studies in Innovation, Research and Education",,268,no
+70,Joxxx,Maأ±anxxxxxxxxxxxx,xxxxxxxxxxxxx@cchs.csic.es,Spain,"Spanish National Research Council",,269,no
+71,Xiaxxxxx,Zhxxx,xxxxxxxxxxxxx624@gmail.com,China,"Southwest University",,408,yes
+71,Lxx,Pexx,xxxxxxxxxx.las.ac.cn,China,"Chinese Academy of Sciences",,409,no
+73,Mxx,Kexxx,xxxxxxxxs.odu.edu,"United States","Old Dominion University",http://matxxxxxxxxx,53,yes
+73,Micxxxxxxx,Nexxxx,xxxxxxxodu.edu,"United States","Old Dominion University",http://www.cs.xxxxxxxxxxxxx,71,yes
+73,Micxxxxxxx,Wexxxx,xxxxxxxxxs.odu.edu,"United States","Old Dominion University",http://www.cs.odxxxxxxxxxxxxxxx,110,yes
+74,Myxxxx,Trxxx,xxxxxxxxxaub@cwi.nl,Netherlands,"Vrije Universiteit Amsterdam",http://wwxxxxxxxx,270,yes
+74,Thxxx,Saxxx,xxxxxxcwi.nl,Netherlands,CWI,,271,yes
+74,Jaxxx,"van Oxxxxxxxxxxx",xxxxxxxxxxxxxxnbruggen@cwi.nl,Netherlands,"CWI & VU University Amsterdam",http://homepages.xxxxxxxxxxxxxxxx,260,yes
+74,Lyxxx,Harxxxx,xxxxxxcwi.nl,Netherlands,CWI,,272,yes
+75,Nixx,Wixx,xxxxxx@zbw.eu,Germany,"ZBW-Leibniz Information Centre for Economics",,410,yes
+75,Toxxxx,Mixx,xxxxxxxxxxxxuni-passau.de,Germany,"University Passau",,411,yes
+75,Chrxxxxx,Seixxxx,xxxxxxxxxxxxxxxt@uni-passau.de,Germany,"University Passau and University of Twente",,89,yes
+76,Emmxxxxx,Adexxxx,xxxxxxxxxxxxxsi8@gmail.com,Nigeria,"Federal University of Technology, Akure",http://www.xxxxxxxxxxx,273,no
+76,Bolxxxx,Ojxxxx,xxxxxxxxxxxoh@yahoo.com,Nigeria,"Federal University of Technology, Akure",http://www.xxxxxxxxxxx,274,yes
+77,Bolxxxx,Ojxxxx,xxxxxxxxxxxoh@yahoo.com,Nigeria,"Federal University of Technology, Akure",http://www.xxxxxxxxxxx,274,yes
+77,Toxxxx,Igxx,xxxxxxxxx@gmail.com,China,"Shenzhen Institute of Advanced Technology",,275,no
+77,Bamxxxxx,Afoxxxx,xxxxxxxxxxs@yahoo.com,Nigeria,"Federal University of Technology, Akure",,276,no
+78,Muhamxxxxxxxxxx,Mohxxxxxx,xxxxxxxxxxi@gmail.com,Malaysia,"Universiti Tenaga Nasional",,412,yes
+78,Gopxxxxx,Murxxxx,xxxxxxxxxxxxthi@gmail.com,Malaysia,"Universiti Tenaga Nasional",,413,no
+78,Adxx,Jaxxxx,xxxxxxxxxxxxxkyoto-u.ac.jp,Japan,"Kyoto University",http://www.dl.kuis.kxxxxxxxxxxxxxxxxxxx,47,yes
+78,Yuxxxx,Kaxxx,xxxxxxxxxxxoto-su.ac.jp,Japan,"Kyoto Sangyo University",http://castor.kxxxxxxxxxxxxxx,414,yes
+79,Sumaxxxxxxxx,Maxxx,xxxxxxxxxxxxxxxxxxcse.iitkgp.ernet.in,India,"Indian Institute of Technology," Kharagpur", India",http://cse.iitkgpxxxxxxxxxxxxxxxx,277,yes
+79,Shuxxxx,Saxxxx,xxxxxxxxxxxxx0294@gmail.com,India,"Indian Institute of Technology Kharagpur, India",,278,no
+79,Prixxxxxx,Mukxxxxxx,xxxxxxxxx@gmail.com,India,"Indian Institute of Technology, Kharagpur",http://prithxxxxxxxxxxxx,279,no
+79,Roxxx,Sixxx,xxxxxxxxxxxxtd@gmail.com,India,"Indian Institute of Technology Delhi",http://www.xxxxxxxxxx,280,no
+79,Chanxxxxxxxxx,Jxx,xxxxxxxxxxxxxxxxail.iimcal.ac.in,India,"Indian Institute of Technology Kharagpur, India",,281,no
+79,Paxxx,Goxxx,xxxxxxxxxxk@gmail.com,India,"IIT Kharagpur",,201,no
+79,Anixxxx,Mukxxxxxx,xxxxxxxxxgmail.com,India,"Indian Institute of Technology, Kharagpur",Http://cse.iitkgpxxxxxxxxxxxxxxxxx,69,no
+80,Farxxxxx,Pouxxxxxxx,xxxxxxxx@tamu.edu,"United States","Texas A&M University",,79,yes
+80,Frxxx,Shixxxx,xxxxxxxxxxe.tamu.edu,"United States","Texas A&M University",,91,yes
+81,Coxxxx,Mcxxx,xxxxxxxxs.odu.edu,"United States","Old Dominion University",,282,yes
+81,Micxxxx,Nexxxx,xxxxxxxodu.edu,"United States","Old Dominion University",http://www.cs.xxxxxxxxxxxxx,71,yes
+81,Micxxxx,Wexxxx,xxxxxxxxxs.odu.edu,"United States","Old Dominion University",,110,yes
+82,Domxxxxx,Tkaxxxx,xxxxxxxxxxxxxxxk@adaptcentre.ie,Ireland,"Trinity College Dublin",,103,yes
+82,Anxxxx,Colxxxx,xxxxxxxxxxxxxx@adaptcentre.ie,Ireland,"Trinity College Dublin",,283,yes
+82,Joxxxx,Bexx,xxxxxl.org,Ireland,"Trinity College Dublin",http://bxxxxxxx,10,yes
+83,Fedxxxxx,Naxxx,xxxxxxxxxxxxxxxxxik.uni-mannheim.de,Germany,"University of Mannheim",https://federxxxxxxxxxxxxx,126,yes
+83,Simoxxxxxxxx,Ponxxxxx,xxxxxxxxxxxxxxxxk.uni-mannheim.de,Germany,"University of Mannheim",http://web.informatik.unxxxxxxxxxxxxxxxxxxxxxxx,78,yes
+83,Laxxx,Dixxx,xxxxxxxx.unh.edu,"United States","University of New Hampshire",,284,yes
+84,Domxxxxx,Tkaxxxx,xxxxxxxxxxxxxxxk@adaptcentre.ie,Ireland,"Trinity College Dublin",,103,yes
+84,Anxxxx,Colxxxx,xxxxxxxxxxxxxx@adaptcentre.ie,Ireland,"Trinity College Dublin",,283,yes
+84,Paxxxx,Shexxxxx,xxxxxxxxxxxxxxx@adaptcentre.ie,Ireland,"Trinity College Dublin",,285,no
+84,Joxxxx,Bexx,xxxxxl.org,Ireland,"Trinity College Dublin",http://bxxxxxxx,10,yes
+85,Paxxxx,Fafxxxxx,xxxxxxxs@l3s.de,Germany,"L3S Research Center, University of Hannover",http://www.l3sxxxxxxxxxxxxx,286,yes
+85,Vaixxxx,Kasxxxxx,xxxxxxxa@l3s.de,Germany,"L3S Research Center, Leibniz Universität Hannover",,287,yes
+85,Wolxxxxx,Nexxx,xxxxxxl3s.de,Germany,"L3S and University of Hannover",http://www.kbs.uni-xxxxxxxxxxxxxxxxxxx,70,no
+86,Dxx,Wx,xxxxxxxxhu.edu.cn,China,"School of Information Management, Wuhan University",,162,yes
+86,Faxx,Yuxx,xxxxxxxx87@qq.com,China,"School of Information Management, Wuhan University",,288,no
+89,Anxx,Lauxxxxx,xxxxxxxxxxxxxxx.uni-mannheim.de,Germany,"University of Mannheim",,289,yes
+89,Kxx,Ecxxxx,xxxxxxxxxxxstuttgart.de,Germany,"Stuttgart Media University",http://wwwxxxxxxxxxx,27,yes
+89,Luxxx,Gaxxx,xxxxxxx@zbw.eu,Germany,"ZBW -- Leibniz Information Centre for Economics",,290,no
+89,Anxxxx,Scxxxx,xxxxxxxp@zbw.eu,Germany,"ZBW -- Leibniz Information Centre for Economics",,218,no
+89,"Syed Txxxxxxxxxxx",Rixxx,xxxxxxxxxxxxxxxza.rizvi@dfki.de,Germany,"DFKI -- German Research Center for Artificial Intelligence",,291,no
+89,Shxxxx,Ahxxx,xxxxxxxxxxed@dfki.de,Germany,"DFKI -- German Research Center for Artificial Intelligence",,292,no
+89,Andxxxx,Dexxxx,xxxxxxxxxxxgel@dfki.de,Germany,"DFKI -- German Research Center for Artificial Intelligence",,293,no
+89,Phixxxx,Zumxxxxx,xxxxxxxxxxxxxxxxxxib.uni-mannheim.de,Germany,"Mannheim University Library",,294,no
+89,Annxxxx,Klxxx,xxxxxxxxxxxxxxxxb.uni-mannheim.de,Germany,"Mannheim University Library",,295,no
+90,Maxxx,Neuxxxx,xxxxxxxxxxxxn@th-koeln.de,Germany,"Technische Hochschule Köln (University of Applied Sciences)",,415,yes
+90,Chrixxxxxxx,Micxxxx,xxxxxxxxxxni-trier.de,Germany,"Trier University, dblp",,416,yes
+90,Phixxxx,Scxxxx,xxxxxxxxxxxxxr@th-koeln.de,Germany,"TH Köln (University of Applied Sciences)",http://wwwxxxxxxxxxx,417,no
+90,Raxx,Schxxxxx,xxxxxxxxxxni-trier.de,Germany,"Trier University, dblp",,88,no
+91,Taxxxx,أپlvaxxxxxxxxxx,xxxxxxxxxxti.uvigo.es,France,"Aix-Marseille Université - CNRS (LSIS)",,418,yes
+91,Patxxxx,Bexxxx,xxxxxxxxxxxxxt@univ-amu.fr,France,"Aix-Marseille Université - CNRS (LSIS)",http://www.lsixxxxxxxxxxxxx,419,no
+91,Milxxxxx,Fernأ،xxxxxxxxxxxxxx,xxxxxxxxxxxxxxxdez@gti.uvigo.es,Spain,"AtlantTIC Centre, University of Vigo",,420,no
+91,Enrxxxx,Costaxxxxxxxxxxx,xxxxxxxx.uvigo.es,Spain,"Universidad de Vigo",http://www-gti.dexxxxxxxxxxxxxxxxx,421,no
+92,Catxxxxxx,Marxxxxx,xxxxxxxxxxxxial@gmail.com,"United States","Texas A and M University",http://www.csdl.taxxxxxxxxxxxxxxxxx,64,yes
+93,Wexxxx,Xx,xxxxxxxxxutexas.edu,"United States","The University of Texas at Austin",,114,yes
+93,Maxxx,Esxxxx,xxxxxxxxxx.utexas.edu,"United States","The University of Texas at Austin",http://www.taxxxxxxxxxxxxx,481,yes
+93,Jesxxxx,Trexxxxx,xxxxxxxxxx@utexas.edu,"United States","The University of Texas at Austin",,482,no
+94,Lexx,"de Sxxxxxxxxx",xxxxxxxxxxdcc.ufmg.br,Brazil,"Univ. Federal de Minas Gerais - UFMG",,296,yes
+94,Mirxxxx,"M. xxxx",xxxxxxxxxcc.ufmg.br,Brazil,"Univ. Federal de Minas Gerais - UFMG",http://www.dcc.uxxxxxxxxxxxxxxx,141,yes
+95,Anxxxx,Salxxxxx,xxxxxxxxxxxxxno@open.ac.uk,"United Kingdom","The Open University, Knowledge Media Institute",http://salxxxxxxxxx,297,yes
+95,Fraxxxxxx,Osbxxxx,xxxxxxxxxxxxxxrne@open.ac.uk,"United Kingdom","The Open University, Knowledge Media Institute",,298,no
+95,Enxxxx,Moxxx,xxxxxxxxxxxa@open.ac.uk,"United Kingdom","The Open University, Knowledge Media Institute",,299,no
+96,Hoxx,Cxx,xxxxxxxxx@gmail.com,"United States","University of Arizona",,483,yes
+97,Gerxxxx,Pessxxxxxxxxx,xxxxxxxxxxxxxa@dcc.ufmg.br,Brazil,"Universidade Federal de Minas Gerais",,422,no
+97,Thxxxx,Dixx,xxxxxxxxxx.cefetmg.br,Brazil,"Centro Federal de Educação Center Tecnológica",,423,no
+97,Thxxxx,Sixxx,xxxxxxxx.ufmg.br,Brazil,"Universidade Federal de Minas Gerais",,424,no
+97,Albxxxx,Laexxxx,xxxxxxxxxcc.ufmg.br,Brazil,"Universidade Federal de Minas Gerais",,58,yes
+98,Fexxx,Hamxxxx,xxxxxxxxmborg.eu,Germany,"University of Konstanz",https://felixxxxxxxxxxxxx,40,yes
+98,Corxxxx,Brexxxxxxx,xxxxxxxxxxxxxxxxxr@uni-konstanz.de,Germany,"University of Konstanz",,117,no
+98,Moxxxx,Schxxxxx,xxxxxxxxxxu-berlin.de,Germany,"Universität Konstanz",http://www.formulxxxxxxxxxxxxxxxxx,300,no
+98,Sأxxxx,Lacxxxx,,Germany,"Universität Konstanz",,301,no
+98,Bexx,Gixx,xxxxxxipp.com,"United States","UC Berkeley, California and Universität Konstanz",http://wwwxxxxxxxxx,37,no
+99,Sayexxxxxxxxx,Bakhxxxxxxx,xxxxxxxxxxxxxesh@aut.ac.ir,Iran,"Amirkabir University of Technology",,302,no
+99,Azxxxx,Moxxxx,xxxxxxxxxxndoc.ac.ir,Iran,"Iranian Research Institute for Information Science and Technology (IranDoc)",,303,yes
+99,Abxxx,Ahxxxx,xxxxxxxxxxxi@aut.ac.ir,Iran,"Amirkabir University of Technology",,304,yes
+100,Yuxxxx,Yaxx,xxxxxxxxgmail.com,China,"Wuhan University",http://ir.wxxxxxxxxxx,305,no
+100,Haxxxx,Chxx,xxxxxxxxxx@my.unt.edu,"United States","University of North Texas",http://iia01.ci.unt.edxxxxxxxxxxxxxxxxxxxxx,306,yes
+100,Wxx,Lx,xxxxxxxxu.edu.cn,China,"Wuhan University",http://ir.wxxxxxxxxxx,307,no
+100,Brxxxx,Reyexxxxxxx,xxxxxxxxxxes@unt.edu,"United States","University of North Texas",http://iia01.ci.unt.edu/Ixxxxxxxxxxxxxxxxxxxxxxxx,308,no
+101,Ahxxx,Taxxx,xxxxxxxxub.ac.be,Belgium,"vrije universiteit brussels",,309,yes
+101,Bexx,Sixxxx,xxxxxxx@vub.be,Belgium,"Vrije Universiteit Brussel",http://www.bexxxxxxxxxxxxx,310,yes
+102,Josxxxxxxx,Gonzaxxxxxxxxx,xxxxxxxxxxxcs.tu-bs.de,Germany,"IFIS Braunschweig",http://www.ifixxxxxxxxxxxxxx,311,yes
+102,Wolxxxxxx,Baxxx,xxxxxxl3s.de,Germany,"Institut für Informationssysteme, TU Braunschweig",http://www.ifis.cs.txxxxxxxxxxxxxxxxxxx,312,yes
+103,Shuxxxxxx,Shxxxx,xxxxxxx@cpp.edu,"United States","California State Polytechnic University Pomona",,425,yes
+103,Samxxxx,Jayxxxxxxx,xxxxxxxxxxna@cpp.edu,"United States","California State Polytechnic University Pomona",http://www.cpp.edxxxxxxxxxxxxxxxx,124,yes
+104,Okxxxx,Zavxxxxx,xxxxxxxxxxxlina@unt.edu,"United States","University of North Texas",,426,yes
+104,Vyaxxxxxxx,Zavxxxx,xxxxxxxxxxxxxvalin@unt.edu,"United States","University of North Texas",,427,no
+105,Zexxxx,Carxxxx,xxxxxxxxxxxxic@gesis.org,Germany,"GESIS - Leibniz Institute for the Social Sciences",,313,yes
+105,Saxxxx,Schxxxxxx,xxxxxxxxxxxxxler@gesis.org,Germany,"GESIS - Leibniz Institute for the Social Sciences",,314,no
+105,Phixxxx,Maxx,xxxxxxxxxxxr@gesis.org,Germany,"GESIS - Leibniz Institute for the Social Sciences",,65,no
+105,Norxxxx,Fuxx,xxxxxxxxxxuisburg.de,Germany,"University of Duisburg-Essen",,315,yes
+106,Maxxx,Barxxxx,xxxxxxxxgmail.com,Switzerland,USI,,316,yes
+106,Moxxxx,Lanxxxx,xxxxxxxxxxdoni@usi.ch,Switzerland,"University of Lugano (USI)",,317,yes
+107,Anxxx,Shxxxx,xxxxxxxh@iu.edu,"United States","Indiana University Bloomington",http://www.xxxxxxxxxx,428,yes
+107,Zhxxx,Gxx,xxxxxxxxdiana.edu,"United States","Indiana University Bloomington",https://royzhenxxxxxxxxxxxxxx,429,no
+107,Xiaxxxxxx,Lxx,xxxxxxxxxdiana.edu,"United States","Indiana University Bloomington",http://scholarwiki.indianxxxxxxxxxxxxxxxxxxxxxxxxx,61,yes
+108,Gaxx,Munxxxxx,xxxxxxxg@tcd.ie,Ireland,"Trinity College Dublin",,318,yes
+108,Sexxxx,Lawxxxx,xxxxxxxxxxxxxx@adaptcentre.ie,Ireland,"Trinity College Dublin",,319,no
+109,Davxxxxx,Wexxx,xxxxxxxxxxxxoerc.ox.ac.uk,"United Kingdom","University of Oxford",,320,yes
+109,Iaxx,Emxxxx,xxxxxxxxxxxxoerc.ox.ac.uk,"United Kingdom","University of Oxford",,321,yes
+109,Kexxx,Paxx,xxxxxxxxxxxxerc.ox.ac.uk,"United Kingdom","University of Oxford",,322,yes
+110,Wxx,Jxx,xxxxxxx@unt.edu,"United States","University of North Texas",,455,yes
+110,Coxxxx,Floxxxxx,xxxxxxxxxxxxcu@my.unt.edu,"United States","University of North Texas",,484,yes
+111,Mark-xxxxxxxxx,Muexxxx,xxxxxxxxxxxxxxxxueller@h-its.org,Germany,"Heidelberg Institute for Theoretical Studies",,430,yes
+112,Haxxxx,Xxx,xxxxxxxxxxfoxmail.com,China,"Peking University Founder Group",,323,yes
+112,Xiaxxxxx,Lx,xxxxxxxxxx@pku.edu.cn,China,"Peking University",,324,no
+112,Zxx,Taxx,xxxxxxxxxku.edu.cn,China,"Peking University",,325,no
+113,Quxx,Zhxx,xxxxxxxxxail.iu.edu,"United States","Indiana University Bloomington," Bloomington", IN",,326,yes
+113,Toxxxx,Wexxxx,xxxxxxxdkrz.de,Germany,"German Climate Computing Center (DKRZ)," Hamburg", Germany",,327,no
+113,Bexx,Plxxx,xxxxxxxxdiana.edu,"United States","Indiana University Bloomington," Bloomington", IN",,156,no
+114,Faxx,Zhxxx,xxxxxxx2@qq.com,China,"JiangSu University, NanYang Institute of Technology",,431,no
+114,Shexxxx,Wx,xxxxxxx.edu.cn,China,"JiangSu University",,432,yes
+115,Mohxxxx,Atuxxxx,xxxxxxxxxcs.odu.edu,"United States","Old Dominion University",http://www.cs.odxxxxxxxxxxxxxxxx,328,yes
+115,Micxxxx,Nexxxx,xxxxxxxodu.edu,"United States","Old Dominion University",http://www.cs.xxxxxxxxxxxxx,71,yes
+115,Micxxxx,Wexxxx,xxxxxxxxxs.odu.edu,"United States","Old Dominion University",,110,yes
+116,Alexxxxxx,Nwxxx,xxxxxxxxs.odu.edu,"United States","Department of Computer Science, Old Dominion University",http://www.cs.oxxxxxxxxxxxxxxx,329,yes
+116,Micxxxx,Wexxxx,xxxxxxxxxs.odu.edu,"United States","Old Dominion University",http://www.cs.odxxxxxxxxxxxxxxx,110,yes
+116,Micxxxx,Nexxxx,xxxxxxxodu.edu,"United States","Old Dominion University",http://www.cs.xxxxxxxxxxxxx,71,yes
+117,Amxxxx,Zerxxxxx,xxxxxxxxe@twu.edu,"United States","Texas Woman's University",,433,yes
+117,Woxxx,Evxxx,xxxxxxxx@twu.edu,"United States","Texas Woman's University",,434,yes
+118,Yasxxxxx,Sumxxxxx,xxxxxxxxxxxxda.tus.ac.jp,Japan,"Tokyo University of Science",http://cs.is.nodxxxxxxxxxxxxxxxx,330,yes
+118,Adxx,Jaxxxx,xxxxxxxxxxxxxkyoto-u.ac.jp,Japan,"Kyoto University",http://www.dl.kuis.kxxxxxxxxxxxxxxxxxxx,47,yes
+118,Maxxxx,Duxxxx,xxxxxxxxxxing@uni.lu,Luxembourg,"Université de Luxembourg",http://martexxxxxxxxxxxx,331,yes
+119,Pavanxxxxxxxxxx,Konxxxxxx,xxxxxxxxxi@niu.edu,"United States","Northern Illinois University",,435,yes
+119,Murxxxx,Shaxxxx,xxxxxxxniu.edu,"United States","Northern Illinois University",,436,yes
+119,Chrxxxxxx,Baxxxx,xxxxxxxx0@niu.edu,"United States","Northern Illinois University",,437,yes
+119,Haxxx,Alhxxxx,xxxxxxx@niu.edu,"United States","Northern Illinois University",http://faculty.cs.xxxxxxxxxxxxxxxxx,3,yes
+120,Tirxxxxxxx,Ghxxxx,xxxxxxxxxxxxlg@gmail.com,India,"Indian Institute of Technology Patna",,332,yes
+120,Raxxxx,Vexxx,xxxxxxxxxxxev@gmail.com,India,"Indian Institute of Technology Patna",,333,no
+120,Asxx,Ekxxx,xxxxxxxxxx@gmail.com,India,"Indian Institute of Technology Patna",,334,no
+120,Srixxxxx,Saxx,xxxxxxxxxxxha@gmail.com,India,"Indian Institute of Technology Patna",,335,no
+120,Pusxxxx,Bhatxxxxxxxxx,xxxxxxxxx@gmail.com,India,"Indian Institute of Technology Patna",,336,no
+120,Srinivasaxxxxxxxxxxxxxxxxxxx,Chixxxxxx,xxxxxxxxxxxxelsevier.com,India,Elsevier,,337,no
+120,Geoxxxxx,Tsatxxxxxxx,xxxxxxxxxxxxx@elsevier.com,Netherlands,Elsevier,,338,no
+120,Paxxxx,Coxxxx,xxxxxxxxxxlsevier.com,Netherlands,Elsevier,,339,no
+120,Micxxxxx,Grexxxx,xxxxxxxxxxxlsevier.com,Netherlands,Elsevier,,340,no
+121,Grxxx,Atxxxx,xxxxxxxxxs.odu.edu,"United States","Old Dominion University",,341,no
+121,Alexxxxxx,Nwxxx,xxxxxxxxs.odu.edu,"United States","Old Dominion University",,329,no
+121,Micxxxx,Wexxxx,xxxxxxxxxs.odu.edu,"United States","Old Dominion University",,110,no
+121,Micxxxx,Nexxxx,xxxxxxxodu.edu,"United States","Old Dominion University",,71,yes
+122,Zhixxxxx,Zhxxx,xxxxxxxxmail.com,China,"School of Information Management of Nanjing University",,342,yes
+122,Weixxxx,Fx,xxxxxxxxxxing@126.com,China,"School of Information Management of Nanjing University",,343,no
+123,Qixx,Pixx,xxxxxxxexel.edu,"United States","Drexel University",,344,yes
+123,Chaxxxx,Chxx,xxxxxxxxexel.edu,"United States","Drexel University",,345,no
+124,Txx,Hx,xxxxxxxib.ac.cn,China,"Wuhan Documentation and Information Center, Chinese Academy of Sciences",,438,no
+124,Wxx,Chxx,xxxxxxxxlib.ac.cn,China,"Wuhan Documentation and Information Center, Chinese Academy of Sciences",,439,yes
+124,Mexxx,Yaxx,xxxxxxx@126.com,China,"Naval University of Engineering",,440,no
+124,Kaxxx,Gxx,xxxxxxxxlib.ac.cn,China,"Wuhan Documentation and Information Center, Chinese Academy of Sciences",,441,no
+124,Guixxxx,Waxx,xxxxxxxxxlib.ac.cn,China,"Wuhan Documentation and Information Center, Chinese Academy of Sciences",,442,yes
+125,Hixxxx,Benxxxxx,xxxxxxxx@pdx.edu,"United States","Portland State University",,443,yes
+125,Daxxx,Maxxx,xxxxxxpdx.edu,"United States","Portland State University",,444,yes
+126,Jiaxxxx,Hx,xxxxxxxxxx@drexel.edu,"United States","Drexel University",,346,yes
+126,Chaxxxx,Chxx,xxxxxxxxxxxn@drexel.edu,"United States","Drexel University",http://www.pages.xxxxxxxxxxxxxxxxx,345,no
+127,Samxxxx,Jayxxxxxxx,xxxxxxxxxxna@cpp.edu,"United States","California State Polytechnic University Pomona",http://www.cpp.edxxxxxxxxxxxxxxxx,124,yes
+127,Soxxxx,Shanmxxxxxxxxx,xxxxxxx@cpp.edu,"United States","California State Polytechnic University Pomona",,445,no
+128,Mihxxxx,Plamaxxxxxxxxxx,,Romania,"Institute of Computer science",,446,no
+128,Ioxxx,Huxxx,,Romania,"Faculty of Computer Science Iasi",,447,no
+128,Dixxx,Traxxxxxx,xxxxxxxxxxxinfo.uaic.ro,Romania,"Faculty of Computer Science Iasi",http://profs.info.uxxxxxxxxxxxxxxxxxx,448,yes
+128,Danxxxx,Gixx,xxxxxxxxxxxx73@gmail.com,Romania,"""Alexandru Ioan Cuza"" University",https://profs.info.uaxxxxxxxxxxxxxxxxxxxx,36,yes
+130,Moxxxx,Schxxxxx,xxxxxxxxxxu-berlin.de,Germany,"Universität Konstanz",http://www.formulxxxxxxxxxxxxxxxxx,300,yes
+130,Anxxxx,Greinxxxxxxxxx,xxxxxxxxxxxxxxxxtter@t-online.de,Germany,"TU Berlin",,347,yes
+130,Phixxxx,Schxxxx,xxxxxxxxxxxxxxx@uni-konstanz.de,Germany,"Uni Konstanz",https://www.isg.uni-konstanz.de/peoplexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,348,no
+130,Noxxxx,Meuxxxxx,xxxxxxxhke.org,Germany,"University of Konstanz, Germany",http://www.mxxxxxxxxxxx,67,yes
+130,Hoxxxx,Coxx,xxxxxxxist.gov,"United States",NIST,http://www.nist.gov/itl/mxxxxxxxxxxxxxxxxxxxxxxxxx,349,yes
+130,Bexx,Gixx,xxxxxxipp.com,"United States","UC Berkeley, California and Universität Konstanz",http://wwwxxxxxxxxx,37,yes
+131,Yuxx,Kobxxxxxx,xxxxxxxxxxxxxxxkp1@is.naist.jp,Japan,"Nara Institute of Science and Technology",,350,yes
+131,Masxxxx,Shxxxx,xxxxxxxxx.naist.jp,Japan,"Nara Institute of Science and Technology",,351,no
+131,Yuxx,Matxxxxxx,xxxxxxxx.naist.jp,Japan,"Nara Institute of Science and Technology",,352,no
+132,Matxxxx,Foxx,xxxxxxxxe.ubc.ca,Canada,"The University of British Columbia",,485,yes
+132,Saxxxx,Doxxxx,xxxxxxxxxail.ubc.ca,Canada,"The University of British Columbia",,401,yes
+132,Ixx,Roxx,xxxxxxxl@ubc.ca,Canada,"The University of British Columbia",http://idxxxxxxxxx,486,yes
+132,Sixxxx,Fexx,xxxxxxxxce.ubc.ca,Canada,"The University of British Columbia",,487,yes
+133,Donxxxxxx,Chxx,xxxxxxxxsti.re.kr,"South Korea",KISTI,,488,yes
+133,Euxxx,Mx,xxxxxxxxti.re.kr,"South Korea",KISTI,,489,no
+134,Haixxxx,Zhxx,xxxxxxxxxxmail.com,China,"Nanjing Agricultural University",,490,yes
+134,Dexxx,Zhxxx,xxxxxxxxxau.edu.cn,China,"Nanjing Agricultural University",http://info.njau.edu.cn/Detaixxxxxxxxxxxxxxxxxxxxxxxxxxxx,491,no
+134,Juxxxx,Shxx,xxxxxxxxxxxnjau.edu.cn,China,"Nanjing Agricultural University",,492,no
+134,Yonxxxxx,Lx,xxxxxxxxxxxnjau.edu.cn,China,"Nanjing Agricultural University",,493,no
+134,Waxxx,Toxx,xxxxxxxxxxxnjau.edu.cn,China,"Nanjing Agricultural University",,494,no
+135,Haixxxx,Zhxx,xxxxxxxxxxmail.com,China,"Nanjing Agricultural University",,490,yes
+135,Dexxx,Zhxxx,xxxxxxxxxau.edu.cn,China,"Nanjing Agricultural University",http://info.njau.edu.cn/Detaixxxxxxxxxxxxxxxxxxxxxxxxxxxx,491,no
+135,Juxxxx,Shxx,xxxxxxxxxxxnjau.edu.cn,China,"Nanjing Agricultural University",,492,no
+135,Yonxxxxx,Lx,xxxxxxxxxxxnjau.edu.cn,China,"Nanjing Agricultural University",,493,no
+135,Waxxx,Toxx,xxxxxxxxxxxnjau.edu.cn,China,"Nanjing Agricultural University",,494,no
+136,Exx,Isxxxx,xxxxxxxxxxxxxxxm.kyushu-u.ac.jp,Japan,"Kyushu University",,495,yes
+136,Yaxxxx,Hagxxxxx,xxxxxxxxxxxxxyushu-u.ac.jp,Japan,"Kyushu University",,496,yes
+136,Yuxxxx,Watxxxxx,xxxxxxxxxxxxxxxxxx5@m.kyushu-u.ac.jp,Japan,"Kyushu University",,497,yes
+136,Yoxxxx,Tomxxxx,xxxxxxxxxxxshu-u.ac.jp,Japan,"Department of Informatics," Faculty of Information Science and Electrical Engineering"," Kyushu University", Japan",,498,yes
+137,Abhxxxx,Kuxxx,xxxxxxxk@vt.edu,"United States","Virginia Tech",,499,no
+137,Zhxxx,Xxx,xxxxxxxe@vt.edu,"United States","Virginia Tech",,113,yes
+138,Wxx,Haxxxx,xxxxxxxxxxxxxaccessinn.com,"United States","Access Innovations",http://www.axxxxxxxxxxxx,500,yes
+138,Daxxx,Loxxxx,xxxxxxxxxxxxxaccessinn.com,"United States","Access Innovations",http://www.axxxxxxxxxxxx,501,no
+139,Guxxxx,Hx,xxxxxxxxxxwhu.edu.cn,China,"School of Information Management, Wuhan University",,502,no
+139,Juxxxx,Faxx,xxxxxxxxxxxx8@whu.edu.cn,China,"School of Information Management, Wuhan University",,503,no
+139,Haxxxx,Cxx,xxxxxxxxxxxx1@whu.edu.cn,China,"School of Information Management, Wuhan University",,504,no
+139,Chxxx,Wx,xxxxxxxxxwhu.edu.cn,China,"School of Information Management, Wuhan University",,505,no
+139,Wxx,Lx,xxxxxxxxu.edu.cn,China,"School of Information Management, Wuhan University",,307,yes
+140,Xixxxx,Waxx,xxxxxx@vt.edu,"United States","Virginia Tech",,506,no
+140,Zhxxx,Xxx,xxxxxxxe@vt.edu,"United States","Virginia Tech",,113,yes
+141,Xx,Lxx,xxxxxxxu.edu.cn,China,"Wuhan university",,507,yes
+141,Xiaxxxxxx,Waxx,xxxxxxx@126.com,China,"Wuhan university",,508,no
+142,Elixxxxxx,Kexxx,xxxxxxxxloyno.edu,"United States","Loyola University New Orleans",https://reusexxxxxxxxxxxx,509,yes
+142,Lxx,Wooxxxxx,xxxxxxxxxxtt@usu.edu,"United States","Utah State University",,510,no
+142,Ayxx,Stxxx,xxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",https://orcid.org/0xxxxxxxxxxxxxxxxxx,511,no
+142,Carxxxxx,Muxxxx,xxxxxxxusc.edu,"United Kingdom","University of Southern California",,512,no
+142,Gexxx,O'xxxx,xxxxxxxgmu.edu,"United States","Virtual Library of Virginia",,513,no
+142,Saxxx,Thoxxxxx,xxxxxxxxxn3@uh.edu,"United States","University of Houston",,514,no
+143,Waxx,Xiaxxxxxx,xxxxxxxxxhu.edu.cn,China,"Wuhan University",,515,yes
+143,Chxxx,Hanxxxxx,xxxxxxxxxxxx6@whu.edu.cn,China,"Wuhan University",,516,no
+143,Lxx,Jixx,xxxxxxxxx31@163.com,China,"Wuhan University",,517,no
+143,Zhxxx,Chxx,xxxxxxx2@qq.com,China,"Wuhan University",,518,no
+144,Lucxxxx,Lx,xxxxxxxxx.las.ac.cn,China,"National Science Library, Chinese Academy of Sciences",,519,yes
+144,Txx,Hxx,xxxxxxxxx.las.ac.cn,China,"National Science Library, Chinese Academy of Sciences",,520,no
+144,Yaxxxx,Zhxx,xxxxxxxxxxl.las.ac.cn,China,"National Science Library, Chinese Academy of Sciences",,521,no
+144,Xuexxxx,Waxx,xxxxxxxxxxl.las.ac.cn,China,"National Science Library, Chinese Academy of Sciences",,522,no
+144,Pixx,Zhxx,xxxxxxxxxx.las.ac.cn,China,"National Science Library, Chinese Academy of Sciences",,523,no
+145,Maxxxx,Exx,xxxxxxxxxxxxxkushuin.ac.jp,Japan,"Gakushuin Women’s College",,524,yes
+146,Daxxx,Baixxxxxxx,xxxxxxxxxxkato.ac.nz,"New Zealand","University of Waikato",,7,yes
+146,Anxxxx,Hixxx,xxxxxxxxxkato.ac.nz,"New Zealand","University of Waikato",,43,yes
+146,Salxxxxx,Cunxxxxxxx,xxxxxxxxxxikato.ac.nz,"New Zealand","Waikato University",,22,yes
+146,"J. xxxxxxx",Doxxxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,26,yes
+147,Anxxxx,Hixxx,xxxxxxxxxxxikato.ac.nz,"New Zealand","University of Waikato",,43,yes
+147,Daxxx,Baixxxxxxx,xxxxxxxxxxxaikato.ac.nz,"New Zealand","University of Waikato",,7,no
+147,Rebxxxx,Wilxxxx,xxxxxxxxxxxxxx.waikato.ac.nz,"New Zealand","University of Waikato",,525,no
+147,Crxxx,Taubxxxxxxxx,xxxxxxxxxxikato.ac.nz,"New Zealand","Universiy of Waikato",,526,no
+147,"J. xxxxxxx",Doxxxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,26,no
+150,Daxxx,Baixxxxxxx,xxxxxxxxxxkato.ac.nz,"New Zealand","University of Waikato",,7,yes
+150,"J. xxxxxxx",Doxxxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,26,yes
+150,Boxxx,Capxxxxx,xxxxxxxxxxllinois.edu,"United States","University of Illinois at Urbana-Champaign",,527,no
+151,Taxx,Zimxxxxxx,xxxxxxxxxgmail.com,"United States","University of North Texas, College of Information Science",,528,yes
+151,"Dr. Hxxxxxxxxx",Chxxx,xxxxxxxxxxxxhang@unt.edu,"United States","University of North Texas, College of Information Science",,262,yes
+152,Clxxx,Llexxxxxx,xxxxxxxxxxxxx@sms.ed.ac.uk,"United Kingdom","The University of Edinburgh",,529,yes
+152,Laxxx,Crxx,xxxxxxxxxm@ed.ac.uk,"United Kingdom","The University of Edinburgh",,530,no
+152,Adxxxx,Faxxxx,xxxxxxxx@ed.ac.uk,"United Kingdom","The University of Edinburgh",,531,no
+152,Roxxx,Hixx,xxxxxxxx@ed.ac.uk,"United Kingdom","The University of Edinburgh",http://www.rxxxxxxxxxxx,532,no
+154,Sanxxxx,"Tokala xxxxxxxxxxxxxxxx",xxxxxxxxxxs@gmail.com,India,"IIT Kharagpur",,533,no
+154,Debarxxxxxxxxx,Saxxxx,xxxxxxxxxxxxal@gmail.com,India,"IIT Kharagpur",,534,yes
+154,Plabxxxxxxxx,Bhoxxxxx,xxxxxxxxmail.com,India,"Indian Institute of Technology Kharagpur",http://plaban.gxxxxxxxxxxxxxxx,535,no
+154,Partxxxxxxxxx,Dxx,xxxxxxxxxxxkgp.ernet.in,India,"IIT Kharagpur",,536,no
+155,Chaxxxxxx,Fexx,xxxxxxxxxxxxg@whu.edu.cn,China,"Wuhan University",,537,yes
+155,Wxx,Quxx,xxxxxxxexel.edu,"United States","Drexel University",,538,yes
+156,Erxx,Mixxxx,xxxxxxxxxer@unt.edu,"United States","University of North Texas",,539,yes
+156,Xxx,Waxx,xxxxxxxx@unt.edu,"United States","University of North Texas",,540,no
+156,Zaxx,Khxxx,xxxxxxxxxxmy.unt.edu,"United States","University of North Texas",,541,no
+156,Dexxx,Calxxxxx,xxxxxxxxxxxell@unt.edu,"United States","University of North Texas",,542,no
+157,Timxxxx,Kaxxx,xxxxxxxxy.fsu.edu,"United States","Florida State University",,543,yes
+158,Maxxxx,Klxxx,xxxxxxxxxxxx815@gmail.com,"United States","Los Alamos National Laboratory",,56,yes
+158,Harxxxx,Shaxxxx,xxxxxxxxxxxxar@gmail.com,"United States","Los Alamos National Laboratory",,544,yes
+158,Herxxxx,"Van xxxxxxxxx",xxxxxxxxgmail.com,"United States","Los Alamos National Laboratory, Research Library",http://public.laxxxxxxxxxxxxxxxx,105,yes
+160,Mohxxxx,Atuxxxx,xxxxxxxxxcs.odu.edu,"United States","Old Dominion University",http://www.cs.odxxxxxxxxxxxxxxxx,328,yes
+160,Mxx,Kexxx,xxxxxxxxs.odu.edu,"United States","Old Dominion University",http://www.cs.oxxxxxxxxxxxxxxx,53,yes
+160,Saxxxx,Alxx,xxxxxxxx.odu.edu,"United States","Old Dominion University",http://www.cs.oxxxxxxxxxxxxxx,360,yes
+160,Joxx,Bexxxx,xxxxxxxxxs.odu.edu,"United States","Old Dominion University",http://www.cs.odxxxxxxxxxxxxxxx,545,yes
+160,Micxxxx,Nexxxx,xxxxxxxodu.edu,"United States","Old Dominion University",http://www.cs.xxxxxxxxxxxxx,71,yes
+160,Micxxxx,Wexxxx,xxxxxxxxxs.odu.edu,"United States","Old Dominion University",http://www.cs.odxxxxxxxxxxxxxxx,110,yes
+161,Saxxxx,Alxx,xxxxxxxx.odu.edu,"United States","Old Dominion University",http://www.cs.oxxxxxxxxxxxxxx,360,yes
+161,Mxx,Kexxx,xxxxxxxxs.odu.edu,"United States","Old Dominion University",http://matxxxxxxxxx,53,yes
+161,Micxxxx,Wexxxx,xxxxxxxxxs.odu.edu,"United States","Old Dominion University",http://www.cs.odxxxxxxxxxxxxxxx,110,yes
+161,Micxxxx,Nexxxx,xxxxxxxodu.edu,"United States","Old Dominion University",http://www.cs.xxxxxxxxxxxxx,71,yes
+162,Chixxxx,Nisxxxxx,xxxxxxxxxxxxxxxx.2c@kyoto-u.ac.jp,Japan,"Kyoto University",,546,yes
+162,Hirxxxx,Ogxxx,xxxxxxxxxxxta@gmail.com,Japan,"Kyoto University",https://sites.google.cxxxxxxxxxxxxxxxxxxxxx,547,no
+163,Kaxxxx,Chxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,548,yes
+163,"J. xxxxxxx",Doxxxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,26,no
+164,Minxxxxx,Chxx,xxxxxxxxxxxxl.sysu.edu.cn,China,"SUN YAT-SEN UNIVERSITY",,549,no
+164,Xiaxxxx,Qx,xxxxxxxxxxxxxl.sysu.edu.cn,China,"SUN YAT-SEN UNIVERSITY",,550,yes
+165,Xiaxxxxxx,Waxx,xxxxxxxxxhu.edu.cn,China,"Wuhan University",,515,yes
+165,Hoxxxx,Waxx,xxxxxxxxxx@whu.edu.cn,China,"Wuhan University",,551,yes
+165,Hanxxxxx,Chxxx,xxxxxxxxxxxx6@whu.edu.cn,China,"Wuhan University",,516,yes
+166,Maxxxx,Klxxx,xxxxxxxxxxxx815@gmail.com,"United States","Los Alamos National Laboratory",,56,yes
+166,Harxxxx,Shaxxxx,xxxxxxxxxxxxar@gmail.com,"United States","Los Alamos National Laboratory",,544,yes
+166,Herxxxx,"Van xxxxxxxxx",xxxxxxxxgmail.com,"United States","Los Alamos National Laboratory, Research Library",http://public.laxxxxxxxxxxxxxxxx,105,yes
+167,Wxx,Chxx,xxxxxxxxlib.ac.cn,China,"Wuhan Branch of National Science Library, Chinese Academy of Sciences",,439,yes
+167,Jiaxxxxxx,Chxx,xxxxxxxxxxxhen@unt.edu,"United States","Department of Information Science, University of North Texas",,476,no
+167,Chrixxxxxxx,Erdxxxx,xxxxxxxx@ncsu.edu,"United States","North Carolina State University",,552,no
+167,Trxxxx,Owxxx,xxxxxxxxxxxxxens@gmail.com,"United States","Library of Congress",,553,no
+167,Txx,Jxx,xxxxxxxlsu.edu,"United States","School of Library and Information Science, Louisiana State University",,554,no
+167,Maxx,Phixxxxx,xxxxxxxxxxips@unt.edu,"United States","University of North Texas Libraries",,555,no
+168,Kevxxxxx,Paxx,xxxxxxxxxxxxerc.ox.ac.uk,"United Kingdom","University of Oxford",,322,yes
+168,Jaxxx,Jexx,xxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,48,yes
+168,Timxxxx,Coxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,120,yes
+168,Dexxx,Kuxxxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,556,yes
+168,Daxxx,Baixxxxxxx,xxxxxxxxxxxaikato.ac.nz,"New Zealand","University of Waikato",,7,yes
+168,Pexxx,Orgaxxxxxxx,xxxxxxxxxxxxsciak@du.edu,"United States","University of Denver",,459,yes
+168,"J. xxxxxxx",Doxxxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,26,yes
+169,Haxxxx,Khxx,xxxxxxxxxx@my.unt.edu,"United States","University of North Texas",,557,yes
+169,Hsixxxxxxx,Chxxx,xxxxxxxxxxxxhang@unt.edu,"United States","University of North Texas",,262,yes
+169,Jeoxxxxxx,Kxx,xxxxxxxxxxkim@unt.edu,"United States","University of North Texas",,558,yes
+170,Wixx,Thxxxx,xxxxxxxx@umd.edu,"United States","University of Maryland",,559,yes
+170,Grxx,Jaxxxx,xxxxxxxumd.edu,"United States","University of Maryland",,560,no
+170,Ricxxxx,Marxxxxx,xxxxxxxx@umd.edu,"United States","University of Maryland",,561,no
+171,Yasxxxxx,Sumxxxxx,xxxxxxxxxxxxda.tus.ac.jp,Japan,"Tokyo University of Science",http://cs.is.nodxxxxxxxxxxxxxxxx,330,yes
+171,Adxx,Jaxxxx,xxxxxxxxxxxxxkyoto-u.ac.jp,Japan,"Kyoto University",http://www.dl.kuis.kxxxxxxxxxxxxxxxxxxx,47,yes
+172,Susxxxx,Puxxx,xxxxxx@tzi.de,Germany,"University of Bremen",,562,yes
+172,Roxxxx,Poxxxx,xxxxxx@tzi.de,Germany,"University of Bremen",,563,no
+172,Raxxxx,Maxxxx,xxxxxx@tzi.de,Germany,"University of Bremen",,564,no
+173,Harixxxxxxxx,Sirxxxxx,xxxxxxxxi@niu.edu,"United States","Northern Illiniois University",,565,yes
+173,Akhixxxxxxxx,Akxxxx,xxxxxxx@niu.edu,"United States","Northern Illinois University",,566,yes
+173,Chrxxxxxx,Baxxxx,xxxxxxxx0@niu.edu,"United States","Northern Illinois University",,437,yes
+173,Haxxx,Alhxxxx,xxxxxxx@niu.edu,"United States","Northern Illinois University",,3,yes
+174,Zhxxx,Zxx,xxxxxxxxx@uiowa.edu,"United States","University of Iowa",https://zhiyzxxxxxxxxxxxxx,567,yes
+174,Kaxx,Zhxx,xxxxxxxxx@uiowa.edu,"United States","University of Iowa",http://www.kxxxxxxxxxxx,568,no
+175,Jxx,Haxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",https://orcid.org/0xxxxxxxxxxxxxxxxxx,39,yes
+175,Xiaxxxxxx,Lxx,xxxxxxxxxdiana.edu,"United States","Indiana University Bloomington",https://www.sice.indiana.edu/all-pxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,61,no
+175,Andxxxx,Orpxxxxxxx,xxxxxxxx@ncsu.edu,"United States","North Carolina State University",https://www.lib.ncsuxxxxxxxxxxxxxxxxxxx,569,no
+176,Xixxxx,Mx,xxxxxsf.edu,"United States","University of South Florida",,570,yes
+176,Ricxxxx,Berxxxxx,xxxxxxxxy@usf.edu,"United States","University of South Florida",,571,no
+177,"J. xxxxxxx",Doxxxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,26,yes
+177,Elixxxxxx,Loxxxx,xxxxxxxxxg@unl.edu,"United States","University of Nebraska",,572,no
+177,Liaxxxxx,Sxx,xxxxxxxxe.unl.edu,"United States","University of Nebraska",,573,no
+177,Daxxx,Baixxxxxxx,xxxxxxxxxxkato.ac.nz,"New Zealand","University of Waikato",,7,no
+177,Saxxxx,McIxxxxx,xxxxxxxxxxxthitrust.org,"United States",HathiTrust,,574,no
+177,Kexxx,Paxx,xxxxxxxxxxxxerc.ox.ac.uk,"United States","University of Oxford",,322,no
+178,Jxx,Haxx,xxxxxxxxxxlinois.edu,"United States","University of Illinois at Urbana-Champaign",,39,yes
+179,Axx,Shxxx,xxxxxxxxxlberta.ca,Canada,"University of Alberta",https://sites.google.coxxxxxxxxxxxxxxxxxxxxxxx,92,yes
+180,Yx,Shxx,xxxxxxx8@vt.edu,"United States","Virginia Tech",https://johnshopkinsxxxxxxxxxxxxxxxxxxxx,90,yes
+181,Pexx,Zhxx,xxxxxxxxxzju.edu.cn,China,"Zhejiang University",,207,yes
+181,Yinxxxxx,Zxx,xxxxxxxx7@qq.com,China,"Zhejiang University",,208,no
+181,Jixxxx,Yx,xxxxxxxxxju.edu.cn,China,"Zhejiang University",,209,no
+181,Yxx,Zhxxx,xxxxxxxxu.edu.cn,China,"Zhejiang University",http://www.dcd.zju.edu.cn/62xxxxxxxxxxxxxxxxxxxxxxxxxxx,210,no
+181,Jiaxxxxx,Wx,xxxxxxxu.edu.cn,China,"Zhejiang University",http://www.dcd.zju.edu.cn/6210xxxxxxxxxxxxxxxxxxxxxxxxxxxxx,211,no
+182,Haxxxx,Xxx,xxxxxxxxxxfoxmail.com,China,"Founder Inc.",,323,yes
+182,Xiaxxxxx,Lx,xxxxxxxxxx@pku.edu.cn,China,"Peking University",,324,yes
+182,Zxx,Taxx,xxxxxxxxxku.edu.cn,China,"Peking University",,325,yes
+183,Devxxxxx,Poxxxx,xxxxxxx@utk.edu,"United States","University of Tennessee at Knoxville",,168,yes
+183,Reyxxxx,Regensxxxxxxxxxxx,xxxxxxxxxxxxxxxxeif-harms@utc.edu,"United States","University of Tennessee at Chattanooga",,575,no
+183,Dwxxxx,Huxxxx,xxxxxxxxxxxxxxxxxttanoogaState.EDU,"United States","Chattanooga State Community College",,170,no
+184,Zhuxxxx,Jixxx,xxxxxxxxxxxxxl.sysu.edu.cn,China,"Sun Yat-sen University",,386,yes
+184,Yxx,Lx,xxxxxxxxxxxx.sysu.edu.cn,China,"Sun Yat-sen University",,576,no
+184,Liaxxxxx,Gxx,xxxxxxx.edu.cn,China,"Peking University",,385,yes
+184,Xiaxxxxxx,Lxx,xxxxxxxxxdiana.edu,"United States","Indiana University Bloomington",,61,yes
+185,Anxxxx,Greinxxxxxxxxx,xxxxxxxxxxxxxxxxtter@t-online.de,Germany,"University of Konstanz",,347,yes
+186,Fexxx,Hamxxxx,xxxxxxxxmborg.eu,Germany,"University of Konstanz",https://felixxxxxxxxxxxxx,40,yes
+186,Corxxxx,Brexxxxxxx,xxxxxxxxxxonstanz.de,Germany,"University of Konstanz",,577,no
+186,Moxxxx,Schxxxxx,xxxxxxxxxxu-berlin.de,Germany,"Universität Konstanz",http://www.formulxxxxxxxxxxxxxxxxx,300,no
+186,Sأxxxx,Lacxxxx,,Germany,"Universität Konstanz",,578,no
+186,Bexx,Gixx,xxxxxxipp.com,"United States","UC Berkeley, California and Universität Konstanz",http://wwwxxxxxxxxx,37,no
+187,Maxxxx,Sixxx,xxxxxxxxxxxxxxxx.iitkgp.ernet.in,India,"Indian Institute of Technology, Kharagpur",http://cse.iitkgp.axxxxxxxxxxxxxxxxxxx,202,yes
+187,Arixxxx,Pxx,xxxxxxxxxxl1@tcs.com,India,"TCS Research",http://www.cse.iitxxxxxxxxxxxxxxxxxx,203,no
+187,Lixxxx,Dxx,xxxxxxxxxy@tcs.com,India,"TCS Innovation Lab Delhi",,204,no
+187,Anixxxx,Mukxxxxxx,xxxxxxxxxxxxxxitkgp.ernet.in,India,"Indian Institute of Technology, Kharagpur",Http://cse.iitkgpxxxxxxxxxxxxxxxxx,69,no
+188,Dhxxx,Guxxx,xxxxxxxxxxx-inf.mpg.de,Germany,"Max Planck Institute for Informatics",,176,yes
+188,Klxxx,Berxxxxxx,xxxxxxxxxxxi-inf.mpg.de,Germany,"Max Planck Institute for Informatics",http://www.mpi-infxxxxxxxxxxxxxxxxx,243,yes
+188,Jaxxxx,Strxxxxxx,xxxxxxxxxxxxxgen@gmail.com,Germany,"Max Planck Institute for Informatics",,174,yes
+188,Demxxxxxx,Zeinalxxxxxxxxxxx,xxxxxxxxx.ucy.ac.cy,Cyprus,"University of Cyprus",http://www.cs.ucxxxxxxxxxxxxxxxx,244,yes
+189,Hoxx,Cxx,xxxxxxxxx@gmail.com,"United States","University of Arizona",,483,yes
+190,Xiaxxxxx,Zhxxx,xxxxxxxxxxxxx624@gmail.com,China,"Southwest university",,408,yes
+190,Lxx,Pexx,xxxxxxxxxx.las.ac.cn,China,"Chinese Academy of Sciences",,409,no
+191,Joأ£xxxxxxxx,"de Frexxxxxxxxxxxxx",xxxxxxxxxxo@gmail.com,Brazil,"Universidade Federal de Minas Gerais",,180,yes
+191,Berxxxxx,Ribexxxxxxxx,xxxxxxxxxxcc.ufmg.br,Brazil,"Google Engineering Belo Horizonte & CS Department," UFMG"," Belo Horizonte", Brazil",http://www.dcc.uxxxxxxxxxxxxxxxx,181,yes
+192,Lucxxxx,Lx,xxxxxxxxx.las.ac.cn,China,"National Science Library, Chinese Academy of Sciences",,519,yes
+192,Txx,Hxx,xxxxxxxxx.las.ac.cn,China,"National Science Library, Chinese Academy of Sciences",,520,no
+192,Yaxxxx,Zhxx,xxxxxxxxxxl.las.ac.cn,China,"National Science Library, Chinese Academy of Sciences",,521,no
+192,Xuexxxx,Waxx,xxxxxxxxxxl.las.ac.cn,China,"National Science Library, Chinese Academy of Sciences",,522,no
+192,Pixx,Zhxx,xxxxxxxxxx.las.ac.cn,China,"National Science Library, Chinese Academy of Sciences",,523,no
+193,Yuxxxx,Yaxx,xxxxxxxxgmail.com,China,"Wuhan University",http://ir.wxxxxxxxxxx,305,no
+193,Haxxxx,Chxx,xxxxxxxxxx@my.unt.edu,"United States","University of North Texas",http://iia01.ci.unt.edxxxxxxxxxxxxxxxxxxxxx,306,yes
+193,Wxx,Lx,xxxxxxxxu.edu.cn,China,"wuhan university",http://ir.wxxxxxxxxxx,307,no
+193,Brxxxx,Reyexxxxxxx,xxxxxxxxxxes@unt.edu,"United States","University of North Texas",http://iia01.ci.unt.edu/Ixxxxxxxxxxxxxxxxxxxxxxxx,308,no
+194,Atxx,Laxxx,xxxxxxx@zbw.eu,Germany,"ZBW - Leibniz Information Center for Economics",,405,yes
+194,Tixx,Boxxx,xxxxxxx@zbw.eu,Germany,"ZBW - Leibniz Information Center for Economics",,406,no
+194,Klxxx,Tochxxxxxxx,xxxxxxxxxxann@zbw.eu,Germany,"ZBW - Leibniz Information Center for Economics",,407,no
+195,Taxx,Zimxxxxxx,xxxxxxxxxgmail.com,"United States","University of North Texas, College of Information Science",,528,yes
+195,Hsixxxxxxx,Chxxx,xxxxxxxxxgmail.com,"United States","University of North Texas",,262,yes
+196,Domxxxxx,Tkaxxxx,xxxxxxxxxxxxxxxk@adaptcentre.ie,Ireland,"Trinity College Dublin",,103,yes
+196,Anxxxx,Colxxxx,xxxxxxxxxxxxxx@adaptcentre.ie,Ireland,"Trinity College Dublin",,283,yes
+196,Joxxxx,Bexx,xxxxxl.org,Ireland,"Trinity College Dublin",http://bxxxxxxx,10,yes
+197,Maxxxx,Exx,xxxxxxxxxxxxxkushuin.ac.jp,Japan,"Gakushuin Women’s College",,524,yes
+198,Sandxxxxxxxxx,Paxx,xxxxxxxxxxxxxxni888@gmail.com,India,"Indian Institute of technology, Kharagpur",,579,no
+198,Naxxxx,R,xxxxxxxxx@gmail.com,India,"Indian Institute of technology, Kharagpur",,580,no
+198,Paxxx,Goxxx,xxxxxxxxxxxxxtkgp.ernet.in,India,"Indian Institute of technology, Kharagpur",,201,no
+198,Plabxxxxxxxx,Bhoxxxxx,xxxxxxxxmail.com,India,"Indian Institute of Technology Kharagpur",http://plaban.gxxxxxxxxxxxxxxx,535,yes
+199,Tirxxxxxxx,Ghxxxx,xxxxxxxxxxxxlg@gmail.com,India,"Indian Institute of Technology Patna",,332,yes
+199,Raxxxx,Vexxx,xxxxxxxxxxxev@gmail.com,India,"Indian Institute of Technology Patna",,333,no
+199,Asxx,Ekxxx,xxxxxxxxxx@gmail.com,India,"Indian Institute of Technology Patna",,334,no
+199,Srixxxxx,Saxx,xxxxxxxxxxxha@gmail.com,India,"Indian Institute of Technology Patna",,335,no
+199,Pusxxxx,Bhatxxxxxxxxx,xxxxxxxxx@gmail.com,India,"Indian Institute of Technology Patna",,336,no
+200,Ilxx,Makxxxx,xxxxxxxxv@hse.ru,Russia,"National Research University Higher School of Economics",http://www.hse.ru/xxxxxxxxxxxxxxxxxx,245,yes
+200,Olxx,Gerxxxxxxx,xxxxxxxxxx@gmail.com,Russia,"National Research University Higher School of Economics",http://hse.ru/en/xxxxxxxxxxxxxxxxx,246,no
+200,Paxxx,Sulxxxx,xxxxxxxv@hse.ru,Russia,"National Research University Higher School of Economics",https://www.hse.ru/en/xxxxxxxxxxxxxxxxxxxxx,581,no
+200,Leoxxxxxx,Zhxxxx,xxxxxxx@hse.ru,Russia,"National Research University Higher School of Economics",http://hse.ru/exxxxxxxxxxxxxxx,247,no
+201,Okxxxx,Zavxxxxx,xxxxxxxxxxxlina@unt.edu,"United States","University of North Texas",,426,yes
+201,Vyaxxxxxxx,Zavxxxx,xxxxxxxxxxxxxvalin@unt.edu,"United States","University of North Texas",,427,yes
+202,Junxxxx,Lx,xxxxxxxxxxxxmicams.ac.cn,China,"Institute of Medical Information &amp; Library, Chinese Academy of Medical Sciences and Peking Union Medical College",,582,yes
+202,Xiaxxxxx,Lx,xxxxxxxxxxxximicams.ac.cn,China,"Institute of Medical Information &amp; Library, Chinese Academy of Medical Sciences and Peking Union Medical College",,583,no
+202,Guaxxxxx,Xxx,xxxxxxxxxcams.ac.cn,China,"Institute of Medical Information &amp; Library, Chinese Academy of Medical Sciences and Peking Union Medical College",,584,no
+202,Juxxxx,Waxx,xxxxxxxxxxxximicams.ac.cn,China,"Institute of Medical Information &amp; Library, Chinese Academy of Medical Sciences and Peking Union Medical College",,585,no
+203,Mark-xxxxxxxxx,Muexxxx,xxxxxxxxxxxxxxxxueller@h-its.org,Germany,"Heidelberg Institute for Theoretical Studies",,430,yes
+204,Edxxxx,Fxx,xxxxxt.edu,"United States","Virginia Tech",,30,yes
+205,Roxxxx,Niexxxx,xxxxxxxxxxxsen@UNT.edu,"United States","University of North Texas",,586,yes
+206,Njixxxx,Ojxxxx,xxxxxxxxx@yahoo.com,"South Africa","University of KwaZulu-Natal",http://www.xxxxxxxxxx,587,yes
+207,Olatexxxxxxxxx,Ajaxxxx,xxxxxxxxahoo.com,"South Africa","University of Kwa-Zulu Natal",http://www.xxxxxxxxxx,588,no
+207,Stexxxx,Muxxxx,xxxxxxxxxkzn.ac.za,"South Africa","University of KwaZulu Natal",http://www.xxxxxxxxxx,589,yes
+208,Wixxxx,Ochxxxxxx,xxxxxxxxxxxxgor@yahoo.com,"South Africa","University of KwaZulu-Natal",http://www.xxxxxxxxxx,590,yes
+209,Kacxxxxxx,Choxxxx,xxxxxxxxxxs@gmail.com,"South Africa","University of KwaZulu-Natal",,591,yes
+210,Stexxxx,Abxxxx,xxxxxxxxxx4@gmail.com,"United States","Queensland University of Technology",,592,yes
+211,Zhxxx,Zxx,xxxxxxxxx@uiowa.edu,"United States","University of Iowa",https://zhiyzxxxxxxxxxxxx,567,yes
+212,Phixxxx,Schxxxx,xxxxxxxxxxxxxxx@uni-konstanz.de,Germany,"Uni Konstanz",https://www.isg.uni-konstanz.de/peoplexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,348,yes
+213,Kingxxxxxxx,Ihexxxxxx,xxxxxxxxxxxxxxrika@vuw.ac.nz,"New Zealand","Victoria University of Wellington",https://www.victoria.ac.nz/sim/rexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,593,yes
+214,Susxxxx,Puxxx,xxxxxx@tzi.de,Germany,"University of Bremen",,562,yes
+215,Haxx,Alsxxxx,xxxxxxxxy.fsu.edu,"United States","Florida State University",,393,yes
+216,Timxxxx,Kaxxx,xxxxxxxxy.fsu.edu,"United States","Florida State University",,543,yes
+217,Luxx,Menxxxx,xxxxxxvic.ca,Canada,"University of Victoria",,594,yes
+217,Ricxxxx,Fuxxxx,xxxxxxxxxe.tamu.edu,"United States","Texas A&M University",,34,no
+218,Dexxxx,Cocxxxxxx,xxxxxxxxxxxxxham@my.unt.edu,"United States","University of North Texas",,595,yes
+218,Lxx,Lxx,xxxxxxx@unt.edu,"United States","University of North Texas",,596,no
+219,Corxxxx,Brexxxxxxx,xxxxxxxxxxxxxxxxxr@uni-konstanz.de,Germany,"University of Konstanz",,117,yes
+220,Huaxxxxx,Sx,xxxxxxxxxg@126.com,China,"School of Information Management, Sun Yat-sen University（中山大学资讯管理学院）",,597,yes
+221,Shxxx,Joxxx,xxxxxxxx.odu.edu,"United States","Old Dominion University",https://www.shxxxxxxxxxxxxx,598,yes
+222,Alexxxxxx,Nwxxx,xxxxxxxxs.odu.edu,"United States","Department of Computer Science, Old Dominion University",http://www.cs.oxxxxxxxxxxxxxxx,329,yes
+223,Mohxxxx,Atuxxxx,xxxxxxxxxcs.odu.edu,"United States","Old Dominion University",http://www.cs.odxxxxxxxxxxxxxxxx,328,yes
+224,Coxxxx,Mcxxx,xxxxxxxxs.odu.edu,"United States","Old Dominion University",,282,yes
+224,Micxxxx,Wexxxx,xxxxxxxxxs.odu.edu,"United States","Old Dominion University",,110,yes
+224,Micxxxx,Nexxxx,xxxxxxxodu.edu,"United States","Old Dominion University",http://www.cs.xxxxxxxxxxxxx,71,yes
+225,Tirxxxxxxx,Ghxxxx,xxxxxxxxxxxxlg@gmail.com,India,"Indian Institute of Technology Patna",,332,yes
+226,Nicxxxxx,Coxx,xxxxxxxxxxxxxxxistory.ox.ac.uk,"United Kingdom","University of Oxford",,233,no
+226,Alxxx,Abduxxxxxxxx,xxxxxxxxxxxxxhman@kcl.ac.uk,"United Kingdom","King's College London",,1,yes
+226,Roxxxx,Smxxx,xxxxxxxxxxth@uvu.edu,"United States","Utah Valley University",,599,no
+226,Carxxxxxx,Scxxx,xxxxxxxxxt@uvu.edu,"United States","Utah Valley University",,600,no
+226,Saxxxx,Coxx,xxxxxxxxxry@uvu.edu,"United States","Utah Valley University",,601,no
+226,Roxxxx,Johxxxx,xxxxxxxxxxxxxxxhistory.ox.ac.uk,"United Kingdom","University of Oxford",,602,no
