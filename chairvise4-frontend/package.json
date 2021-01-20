@@ -1,0 +1,68 @@
+{
+  "name": "chairvise4-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --port 3030",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.13.2",
+    "papaparse": "^5.3.0",
+    "color": "^3.1.2",
+    "vue-wordcloud": "^1.1.1",
+    "vue": "^2.6.11",
+    "vue-google-signin-button-directive": "^1.0.3",
+    "vue-router": "^3.2.0",
+    "chart.js": "^2.9.3",
+    "jspdf": "^2.1.1",
+    "html2canvas": "^1.0.0-rc.7",
+    "pptxgenjs": "^3.3.1",
+    "vue-chartjs": "^3.5.1",
+    "vue2-transitions": "^0.3.0",
+    "vuex": "^3.4.0",
+    "qs": "^6.9.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/recommended",
+      "@vue/standard"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
